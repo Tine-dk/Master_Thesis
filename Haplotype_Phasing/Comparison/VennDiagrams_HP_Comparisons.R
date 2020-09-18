@@ -742,27 +742,3 @@ venn.diagram(
   output=T, fill = c(alpha("#ffff00",0.3), alpha('#00ccff',0.3)), cex = 5, cat.cex = 1.75,
   cat.pos = c(0, 565), cat.fontface = "bold", cat.dist = c(0.03, 0.125)
 )
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
