@@ -1,0 +1,241 @@
+#### LONGSHOT #############################
+# To separate alleles
+############################################
+
+## Installing dependencies and creating an environment
+conda create --name longshot
+
+conda install -c conda-forge rust
+conda install -c anaconda zlib
+conda install -c anaconda xz
+conda install -c anaconda clang
+conda install -c conda-forge gcc_linux-64
+conda install -c anaconda libcxx
+conda install -c anaconda make
+conda install -c pkgw-forge cargo
+
+# Pulling longshot and installing
+conda install -c bioconda longshot
+
+##############################################
+## Start interactive node
+srun -A sdularsen_slim --time 24:00:00 --pty bash -i
+## Activate Environment
+conda activate longshot
+## Usage
+$ longshot [FLAGS] [OPTIONS] --bam <BAM> --ref <FASTA> --out <VCF>
+longshot --bam example_data/pacbio_reads_30x.bam --ref example_data/genome.fa --out example_data/longshot_output.vcf
+
+# GM04284
+longshot -A -r 4 -O GM04284_chr4.bam --strand_bias_pvalue_cutoff 0.01 --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out /work/sdularsen/tine/nanoporeData/longshot/GM04284_chr4_2.vcf
+
+longshot -A -r 4 --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot/GM04284_chr4_haplotyped.bam \
+--min_cov 6 --min_allele_qual 7.0 --hap_assignment_qual 20.0 --min_alt_count 3 --max_snvs 3 --max_cigar_indel 1000 --strand_bias_pvalue_cutoff 0.01 \
+--min_alt_frac 0.125 --out /work/sdularsen/tine/nanoporeData/longshot/GM04284_chr4_A.vcf
+
+longshot -A -r X -O GM04284_chrX.bam --strand_bias_pvalue_cutoff 0.01 --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out /work/sdularsen/tine/nanoporeData/longshot/GM04284_chrX_B.vcf
+
+longshot -A -r X --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot/GM04284_chrX_haplotyped.bam \
+--min_cov 6 --min_allele_qual 7.0 --hap_assignment_qual 20.0 --min_alt_count 3 --max_snvs 3 --max_cigar_indel 1000 --strand_bias_pvalue_cutoff 0.01 \
+--min_alt_frac 0.125 --out /work/sdularsen/tine/nanoporeData/longshot/GM04284_chrX_A.vcf
+
+
+
+
+# GM05538
+longshot -A -r 4 -O GM05538_chr4-bam --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out /gpfs/gss1/work/sdularsen/tine/nanoporeData/longshot/GM05538_chr4.vcf
+
+
+longshot -A -r 4 --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot/GM05538_chr4_haplotyped.bam \
+--min_cov 6 --min_allele_qual 7.0 --hap_assignment_qual 20.0 --min_alt_count 3 --max_snvs 3 --max_cigar_indel 1000 --strand_bias_pvalue_cutoff 0.01 \
+--min_alt_frac 0.125 --out /work/sdularsen/tine/nanoporeData/longshot/GM05538_chr4.vcf
+
+
+longshot -A -r X -O GM05538_chrX.bam --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out /gpfs/gss1/work/sdularsen/tine/nanoporeData/longshot/GM05538_chrX.vcf
+
+
+# GM06891
+longshot -A -r 4 -O GM06891_chr4.bam --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out /work/sdularsen/tine/nanoporeData/longshot/GM06891_chr4.vcf
+
+longshot -A -r 4 --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot/GM06891_chr4_haplotyped.bam \
+--min_cov 6 --min_allele_qual 7.0 --hap_assignment_qual 20.0 --min_alt_count 3 --max_snvs 3 --max_cigar_indel 1000 --strand_bias_pvalue_cutoff 0.01 \
+--min_alt_frac 0.125 --out /work/sdularsen/tine/nanoporeData/longshot/GM06891_chr4.vcf
+
+
+longshot -A -r X -O GM06891_chrX.bam --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out /work/sdularsen/tine/nanoporeData/longshot/GM06891_chrX.vcf
+
+
+# GM07541
+longshot -A -r 4 -O GM07541_chr4.bam --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out /work/sdularsen/tine/nanoporeData/longshot/GM07541_chr4.vcf
+
+longshot -A -r 4 --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot/GM07541_chr4_haplotyped.bam \
+--min_cov 6 --min_allele_qual 7.0 --hap_assignment_qual 20.0 --min_alt_count 3 --max_snvs 3 --max_cigar_indel 1000 --strand_bias_pvalue_cutoff 0.01 \
+--min_alt_frac 0.125 --out /work/sdularsen/tine/nanoporeData/longshot/GM07541_chr4.vcf
+
+longshot -A -r X -O GM07541_chrX.bam --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out /work/sdularsen/tine/nanoporeData/longshot/GM07541_chrX.vcf
+
+
+longshot -A -r X --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot/GM07541_chrX_haplotyped.bam \
+--min_cov 6 --min_allele_qual 7.0 --hap_assignment_qual 20.0 --min_alt_count 3 --max_snvs 3 --max_cigar_indel 1000 --strand_bias_pvalue_cutoff 0.01 \
+--min_alt_frac 0.125 --out /work/sdularsen/tine/nanoporeData/longshot/GM07541_chrX.vcf
+
+
+
+
+# GM07861
+longshot -A -r 4 -O GM07891_chr4.bam --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out /work/sdularsen/tine/nanoporeData/longshot/GM07861_chr4.vcf
+
+longshot -A -r 4 --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot/GM07861_chr4_haplotyped.bam \
+--min_cov 6 --min_allele_qual 7.0 --hap_assignment_qual 20.0 --min_alt_count 3 --max_snvs 3 --max_cigar_indel 1000 --strand_bias_pvalue_cutoff 0.01 \
+--min_alt_frac 0.125 --out /work/sdularsen/tine/nanoporeData/longshot/GM07861_chr4.vcf
+
+
+longshot -A -r X -O GM07891_chrX.bam --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out /work/sdularsen/tine/nanoporeData/longshot/GM07861_chrX.vcf
+
+
+# GM20239
+longshot -A -r 4 -O GM20239_chr4.bam --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out /work/sdularsen/tine/nanoporeData/longshot/GM20239_chr4.vcf
+
+longshot -A -r 4 --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot/GM20239_chr4_haplotyped.bam \
+--min_cov 6 --min_allele_qual 7.0 --hap_assignment_qual 20.0 --min_alt_count 3 --max_snvs 3 --max_cigar_indel 1000 --strand_bias_pvalue_cutoff 0.01 \
+--min_alt_frac 0.125 --out /work/sdularsen/tine/nanoporeData/longshot/GM20239_chr4.vcf
+
+longshot -A -r X -O GM20239_chrX.bam --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out /work/sdularsen/tine/nanoporeData/longshot/GM20239_chrX.vcf
+
+longshot -A -r 4 --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot/GM20239_chr4_haplotyped.bam \
+--min_cov 6 --min_allele_qual 7.0 --hap_assignment_qual 20.0 --min_alt_count 3 --max_snvs 3 --max_cigar_indel 1000 --strand_bias_pvalue_cutoff 0.01 \
+--min_alt_frac 0.125 --out /work/sdularsen/tine/nanoporeData/longshot/GM20239_chr4.vcf
+
+
+
+# Enrichment Patient 24-5-2 : FLO-PRO002
+longshot -A -r 4 -O enrichment_patient_24-5-2_FLO-PRO002_chr4.bam \
+--bam /work/sdularsen/tine/nanoporeData/giesselmann/enrichment_patient_24-5-2/FLO-PRO002/guppy/enrichment_patient_24-5-2.bam \
+--ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta --out /work/sdularsen/tine/nanoporeData/longshot/enrichment_patient_24-5-2_FLO-PRO002_chr4.vcf
+
+longshot -A -r X -O enrichment_patient_24-5-2_FLO-PRO002_chrX.bam \
+--bam /work/sdularsen/tine/nanoporeData/giesselmann/enrichment_patient_24-5-2/FLO-PRO002/guppy/enrichment_patient_24-5-2.bam \
+--ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta --out /work/sdularsen/tine/nanoporeData/longshot/enrichment_patient_24-5-2_FLO-PRO002_chrX.vcf
+
+longshot -A -r 9 --bam -O enrichment_patient_24-5-2_FLO-PRO002_chr9.bam \
+/work/sdularsen/tine/nanoporeData/giesselmann/enrichment_patient_24-5-2/FLO-PRO002/guppy/enrichment_patient_24-5-2.bam \
+--ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta --out /work/sdularsen/tine/nanoporeData/longshot/enrichment_patient_24-5-2_FLO-PRO002_chr9.vcf
+
+
+# Enrichment Patient 24-5-2 : FLO-MIN106
+longshot -A -r 4 --bam /work/sdularsen/tine/nanoporeData/giesselmann/enrichment_patient_24-5-2/FLO-MIN106/guppy/enrichment_patient_24-5-2.bam \
+--ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta --out /work/sdularsen/tine/nanoporeData/longshot/enrichment_patient_24-5-2_FLO-MIN106.vcf
+
+longshot -A -r X --bam /work/sdularsen/tine/nanoporeData/giesselmann/enrichment_patient_24-5-2/FLO-MIN106/guppy/enrichment_patient_24-5-2.bam \
+--ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta --out /work/sdularsen/tine/nanoporeData/longshot/enrichment_patient_24-5-2_FLO-MIN106.vcf
+
+longshot -A -r 9 --bam /work/sdularsen/tine/nanoporeData/giesselmann/enrichment_patient_24-5-2/FLO-MIN106/guppy/enrichment_patient_24-5-2.bam \
+--ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta --out /work/sdularsen/tine/nanoporeData/longshot/enrichment_patient_24-5-2_FLO-MIN106.vcf
+
+
+# Enrichment Patient sc105 : FLO-PRO002
+longshot -A -r 4 --bam /work/sdularsen/tine/nanoporeData/giesselmann/enrichment_patient_sc105/FLO-PRO002/guppy/enrichment_patient_sc105.bam \
+--ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta --out /work/sdularsen/tine/nanoporeData/longshot/enrichment_patient_sc105_FLO-PRO002.vcf
+
+longshot -A -r X --bam /work/sdularsen/tine/nanoporeData/giesselmann/enrichment_patient_sc105/FLO-PRO002/guppy/enrichment_patient_sc105.bam \
+--ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta --out /work/sdularsen/tine/nanoporeData/longshot/enrichment_patient_sc105_FLO-PRO002.vcf
+
+longshot -A -r 9 --bam /work/sdularsen/tine/nanoporeData/giesselmann/enrichment_patient_sc105/FLO-PRO002/guppy/enrichment_patient_sc105.bam \
+--ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta --out /work/sdularsen/tine/nanoporeData/longshot/enrichment_patient_sc105_FLO-PRO002.vcf
+
+
+
+# Enrichment Patient sc105 : FLO-MIN106
+longshot -A -r 4 --bam /work/sdularsen/tine/nanoporeData/giesselmann/enrichment_patient_sc105/FLO-MIN106/guppy/enrichment_patient_sc105.bam \
+--ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta --out /gpfs/gss1/work/sdularsen/tine/nanoporeData/longshot/enrichment_patient_sc105_FLO-MIN106.vcf
+
+longshot -A -r X --bam /work/sdularsen/tine/nanoporeData/giesselmann/enrichment_patient_sc105/FLO-MIN106/guppy/enrichment_patient_sc105.bam \
+--ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta --out /gpfs/gss1/work/sdularsen/tine/nanoporeData/longshot/enrichment_patient_sc105_FLO-MIN106.vcf
+
+longshot -A -r 9 --bam /work/sdularsen/tine/nanoporeData/giesselmann/enrichment_patient_sc105/FLO-MIN106/guppy/enrichment_patient_sc105.bam \
+--ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta --out /gpfs/gss1/work/sdularsen/tine/nanoporeData/longshot/enrichment_patient_sc105_FLO-MIN106.vcf
+
+
+# plasmid_c9orf72
+longshot -A -r 9 --bam /work/sdularsen/tine/nanoporeData/giesselmann/plasmid_c9orf72/guppy/plasmid_c9orf72.bam \
+--ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta --out /work/sdularsen/tine/nanoporeData/longshot/plasmid_c9orf72.vcf
+
+# plasmid_FMR1
+longshot -A -r X --bam /work/sdularsen/tine/nanoporeData/giesselmann/plasmid_FMR1/guppy/plasmid_FMR1.bam \
+--ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta --out /work/sdularsen/tine/nanoporeData/longshot/plasmid_FMR1.vcf
+
+
+
+###############
+conda activate minimap2
+
+samtools index /work/sdularsen/tine/nanoporeData/longshot/GM04284_chrX.bam
+samtools index /work/sdularsen/tine/nanoporeData/longshot/GM04284_chr4.bam
+...
+samtools index /work/sdularsen/tine/nanoporeData/longshot/GM20239_chrX.bam
+samtools index /work/sdularsen/tine/nanoporeData/longshot/GM20239_chr4.bam
+
+
+########################
+conda activate minimap2
+
+samtools view /work/sdularsen/tine/nanoporeData/longshot/GM04284_chr4_haplotyped.bam "4:3076603-3076660" > GM04284_HTT_hp.bam
+
+
+#####
+
+
+# ANALYSE AF ALLEL PHASING
+# KAN EFTER DENNE NEDENSTÅENDE DEL ÅBNES I EXCEL ELLER R (ELLER LIGN)
+#############################
+# Få en read names fil
+cut -f 1 longshot_G87-GM20239_HTT_Read_Name_window0_AF_0_30_to_0_70_DP10.txt
+
+#Træk HP tag ud af bam fil
+### samtools view /longshot/GM04284_chr4_haplotyped.subset.bam | grep 1a72fde8-9e51-423b-9f6d-758d6404f409 | cut -f 1,22 > longshot/navn.txt
+#Eller hvis du har flere read IDs, du vil udtrække kan du skrive dem i en fil (fx read_names.txt) med et read ID per linje og så skrive:
+samtools view GM04284_chr4_haplotyped.subset.bam | grep -f GM04284_HTT_Read_names.txt | cut -f 1,22 > GM04284_HTT_HP_Longshot.txt
+samtools view GM05538_chr4_haplotyped.subset.bam | grep -f GM05538_HTT_Read_names.txt | cut -f 1,22 > GM05538_HTT_HP_Longshot.txt
+samtools view GM06891_chr4_haplotyped.subset.bam | grep -f GM06891_HTT_Read_names.txt | cut -f 1,22 > GM06891_HTT_HP_Longshot.txt
+samtools view GM07541_chrX_haplotyped.bam | grep -f GM07541_FMR1_Read_names.txt | cut -f 1,22 > GM07541_FMR1_HP_Longshot.txt
+samtools view GM07541_chr4_haplotyped.subset.bam | grep -f GM07541_HTT_Read_names.txt | cut -f 1,22 > GM07541_HTT_HP_Longshot.txt
+samtools view GM07861_chr4_haplotyped.subset.bam | grep -f GM07861_HTT_Read_names.txt | cut -f 1,22 > GM07861_HTT_HP_Longshot.txt
+samtools view GM20239_chrX_haplotyped.bam | grep -f GM20239_FMR1_Read_names.txt | cut -f 1,22 > GM20239_FMR1_HP_Longshot.txt
+samtools view GM20239_chr4_haplotyped.subset.bam | grep -f GM20239_HTT_Read_names.txt | cut -f 1,22 > GM20239_HTT_HP_Longshot.txt
+
+
+
+
+#Dvs. her bruger jeg samtools til at kigge i bam filen, derefter grep til at hente de linjer med read ID’er som vi er interesseret i, og så til sidste tager jeg det 22 field, som indeholder HP:i
+# Du kan også skrive fx cut -f 1,22 til sidst, hvis du vil have read ID med 
+
+
+
+
+
+
+
+
+
+
