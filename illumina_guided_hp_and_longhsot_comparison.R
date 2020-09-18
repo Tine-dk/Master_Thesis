@@ -1,14 +1,8 @@
 ### Illumina-Guided HP and Longshot Comparison ####
 
+# This code is creating Venn Diagrams for the read-IDs from the two haplotype phasing methods
 
-# 1. Træk read-navne ud af Longshot BAM og skriv metode om det (ikke en del af dette skript)
-# 2. Lav match imellem Longshot og Illumina HP 'read-names lister'.
-# 3. Lav Venn Diagrammer
-
-
-
-
-##################################
+#################################################################################################################################
 
 
 ## Load tables with Illumina-Guided Read-names
