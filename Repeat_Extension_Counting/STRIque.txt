@@ -1,0 +1,574 @@
+##Links to fast5 files in Emily's folders to gather all runs for the individual samples
+# Sample GM04284
+ln /gpfs/gss1/work/sdularsen/nanopore/04284_circulomic_rapidkit_251119/04284cirulomic/20191125_1352_1-E7-H7_PAE16041_ecbf2753/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM04284
+ln /gpfs/gss1/work/sdularsen/nanopore/04284circulomic_ligationkit_181119/04284circulomic_ligationkit_181119/04284circulomic/20191118_1413_1-E7-H7_PAE17010_81d9e4ee/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM04284
+
+# Sample GM05538
+ln /gpfs/gss1/work/sdularsen/nanopore/ligationkit_test_05538_110719_emilie/ligationkit_test_110719_emilie/GM05538P4_1/20190711_1338_1-E7-H7_PAD70673_88442a91/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM05538
+ln /gpfs/gss1/work/sdularsen/nanopore/ligationkit_test_Circulomics_05P41/GM05538_P4_1_circulomics/20190712_1313_1-E7-H7_PAD70673_737dea71/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM05538
+ln /gpfs/gss1/work/sdularsen/nanopore/05circulomic_rapidkit_ekstrakoersel/05538circulomic/20191104_1354_1-E7-H7_PAD75168_b014cf67/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM05538
+ln /gpfs/gss1/work/sdularsen/nanopore/05circulomic_rapidkit_ekstrakoersel/05cirulomic_efterfluch/20191105_1134_1-E7-H7_PAD75168_b7548584/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM05538
+
+# Sample GM20239
+ln /gpfs/gss1/work/sdularsen/nanopore/20239_P5_circulomic_130819/20239_p5_circulomic/20190813_1144_1-E7-H7_PAD72147_fd9ff2da/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM20239
+ln /gpfs/gss1/work/sdularsen/nanopore/202circulomic_ekstra_rapidkit/20239circulomic_efterfluch/20191105_1136_2-E1-H1_PAE01328_acdfb3b3/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM20239
+ln /gpfs/gss1/work/sdularsen/nanopore/202circulomic_ekstra_rapidkit/20239irculomic/20191104_1355_2-E1-H1_PAE01328_2904dcb8/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM20239
+ln /gpfs/gss1/work/sdularsen/nanopore/202_qiagen_DNA_100919_ligationkit/20239_qiaen_DNA/20190910_1129_1-A1-D1_PAD75170_f38d5eeb/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM20239
+
+# Sample GM06891
+ln /gpfs/gss1/work/sdularsen/nanopore/06891_2_circulomic_300819_ligationkit/06891_2_circulomic/20190830_1150_2-E7-H7_PAD72549_67d1a777/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM06891
+ln /gpfs/gss1/work/sdularsen/nanopore/06891circulomic_rapidkit_211019/06891_circulomic/20191021_1052_2-A1-D1_PAE05093_baea85ea/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM06891
+ln /gpfs/gss1/work/sdularsen/nanopore/06891circulomic_rapidkit_211019/06891circulomic_efterfluch/20191022_1041_2-A1-D1_PAE05093_4bce9f7b/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM06891
+ln /gpfs/gss1/work/sdularsen/nanopore/Test_emilie_020719/GM06891_B_P2_2/20190702_1210_1-A7-D7_PAD70451_1de317cb/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM06891
+
+# Sample GM07541
+ln /gpfs/gss1/work/sdularsen/nanopore/07541_circulomic_DNa_ligationkit_100919/07541P4_circulomic2/20190910_1132_2-A7-D7_PAD72161_0f79e633/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM07541
+ln /gpfs/gss1/work/sdularsen/nanopore/07541_circulomic_ligation2test_28019/0751_circulomic2/20190828_1145_1-E7-H7_PAD71035_e7af4d05/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM07541
+
+# Sample GM07861
+ln /gpfs/gss1/work/sdularsen/nanopore/07861circulomic_ligationkit_181119/07861circulomic_ligationkit_181119/07861circulomic/20191118_1414_2-E1-H1_PAE16032_51f89e5e/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM07861
+ln /gpfs/gss1/work/sdularsen/nanopore/07861_rapidkit_191119/07861_rapidkit_191119/07861/20191119_1419_1-A7-D7_PAE16035_d78c4b02/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM07861
+ln /gpfs/gss1/work/sdularsen/nanopore/07861p3_circulomic_ligationkit_250919/07861_circulomic_efterNfluch/20190926_1227_2-E7-H7_PAE01392_c6a591cd/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM07861
+ln /gpfs/gss1/work/sdularsen/nanopore/07861p3_circulomic_ligationkit_250919/07861P3_circulomic/20190925_1243_2-E7-H7_PAE01392_461b59f3/fast5_pass/*.fast5 /gpfs/gss1/work/sdularsen/tine/nanoporeData/fast5/G87-GM07861
+
+
+
+
+##################################
+## Start interactive node
+srun -A sdularsen_slim --time 24:00:00 --pty bash -i
+
+## activate environment
+conda activate strique
+
+## activate udocker
+udocker run -v /work/sdularsen:/work/sdularsen strique /bin/bash
+
+
+
+
+##Create fofn file
+#Note: slet /gpfs/gss1/ fra stien
+######################################
+##Run STRique to create a .fofn file
+# Sample GM04284
+python3 scripts/STRique.py index /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/ > /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn
+
+# 	New fofn due to changed location of fast5 files
+python3 scripts/STRique.py index /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM04284/ > /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM04284/new_GM04284.fofn
+
+
+# Sample GM05538
+python3 scripts/STRique.py index /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/ > /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn
+
+#	New fofn due to changed location of fast5 files
+python3 scripts/STRique.py index /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM05538/ > /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM05538/new_GM05538.fofn
+
+
+# Sample GM20239
+python3 scripts/STRique.py index /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/ > /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn
+
+#	New fofn due to changed location of fast5 files
+python3 scripts/STRique.py index /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM20239/ > /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM20239/new_GM20239.fofn
+
+
+# Sample GM06891
+python3 scripts/STRique.py index /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/ > /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn
+
+#	New fofn due to changed location of fast5 files
+python3 scripts/STRique.py index /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM06891/ > /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM06891/new_GM06891.fofn
+
+
+# Sample GM07541
+python3 scripts/STRique.py index /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/ > /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn
+
+#	New fofn due to changed location of fast5 files
+python3 scripts/STRique.py index /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM07541/ > /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM07541/new_GM07541.fofn
+
+
+# Sample GM07861
+python3 scripts/STRique.py index /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/ > /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn
+
+#	New fofn due to changed location of fast5 files
+python3 scripts/STRique.py index /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM07861/ > /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM07861/new_GM07861.fofn
+
+
+
+
+#####################################
+##Create sam-files to run STRique on
+#samtools view -F 2308 {input.bam} > {output.sam}
+
+# Sample GM04284
+samtools view -F 2308 /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.sam
+
+# Sample GM05538
+samtools view -F 2308 /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.bam > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.sam
+
+# Sample GM20239
+samtools view -F 2308 /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.sam
+
+# Sample GM06891
+samtools view -F 2308 /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.bam > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.sam
+
+# Sample GM07541
+samtools view -F 2308 /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.sam
+
+# Sample GM07861
+samtools view -F 2308 /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.bam > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.sam
+
+
+
+
+#######################################
+## Copy of repeat_config.tsv from Emilie's folder as it has the prefix and suffix for all the diseases
+#virker ikke# ln /gpfs/gss1/work/sdularsen/nanopore/repeat_config.tsv /gpfs/gss1/work/sdularsen/tine/nanoporeData/strique
+
+#######################################
+### cat
+#
+# In the folder "new" under STRique lays the count results and plot results for the good fofn files.
+# The counts and plots there lays in "STRique" has been made on incomplete fofn files, which gives a lower sequencing depth analytically.
+
+
+## Sample GM04284
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/strique/repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/GM04284_count_results.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM04284_count_results_hg37.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn --output /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM04284_plot --dpi 300
+
+
+## Sample GM05538
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/strique/repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/GM05538_count_results.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM05538_count_results_hg37.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn --output /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM05538_plot --dpi 300
+
+
+## Sample GM20239
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/strique/repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/GM20239_count_results.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM20239_count_results_hg37.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn --output /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM20239_plot --dpi 300
+
+
+## Sample GM06891
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/strique/repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/GM06891_count_results.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM06891_count_results_hg37.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn --output /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM06891_plot --dpi 300
+
+
+## Sample GM07541
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/strique/repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/GM07541_count_results.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM07541_count_results_hg37.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn --output /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM07541_plot --dpi 300
+
+
+## Sample GM07861
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/strique/repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/GM07861_count_results.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM07861_count_results_hg37.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn --output /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM07861_plot --dpi 300
+
+
+
+
+
+
+
+##### Changed Flanks 150
+
+## Sample GM04284
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/repeat_config_150_flanks.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM04284_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM04284_count_results_hg37.txt | python3 /app/scripts/STRique.py plot --width 64  /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn --output /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM04284_plot_width_64 --dpi 300
+
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/repeat_config_150_flanks.tsv --config /app/configs/STRique.json --mod_model /app/models/r9_4_450bps_mCpG.model > /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM04284_2_methylation_results_hg37.txt
+
+
+
+## Sample GM05538
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/repeat_config_150_flanks.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM05538_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM05538_count_results_hg37.txt | python3  /app/scripts/STRique.py plot --width 64 /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn --output /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM05538_plot_width_64 --dpi 300
+
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/repeat_config_150_flanks.tsv --config /app/configs/STRique.json --mod_model /app/models/r9_4_450bps_mCpG.model > /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM05538_2_methylation_results_hg37.txt
+
+
+
+cat /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM05538_FMR1.txt | python3  /app/scripts/STRique.py plot --extension 150  \
+/work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn \
+--output /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM05538_plot_changed_parameters --dpi 300
+
+
+
+
+## Sample GM20239
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/repeat_config_150_flanks.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/150_flanks/GM20239_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM20239_count_results_hg37.txt | python3  /app/scripts/STRique.py plot --width 64 /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn --output /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM20239_plot_width_64 --dpi 300
+
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/repeat_config_150_flanks.tsv --config /app/configs/STRique.json --mod_model /app/models/r9_4_450bps_mCpG.model > /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM20239_2_methylation_results_hg37.txt
+
+
+
+## Sample GM06891
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/repeat_config_150_flanks.tsv  --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/150_flanks/GM06891_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM06891_count_results_hg37.txt | python3  /app/scripts/STRique.py plot --width 64 /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn --output /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM06891_plot_width_64 --dpi 300
+
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/dfast5/G87-GM06891/reads_GM06891.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/repeat_config_150_flanks.tsv --config /app/configs/STRique.json --mod_model /app/models/r9_4_450bps_mCpG.model > /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM06891_2_methylation_results_hg37.txt
+
+
+
+## Sample GM07541
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/repeat_config_150_flanks.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/150_flanks/GM07541_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM07541_count_results_hg37.txt | python3  /app/scripts/STRique.py plot --width 64 /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn --output /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM07541_plot_width_64 --dpi 300
+
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/repeat_config_150_flanks.tsv --config /app/configs/STRique.json --mod_model /app/models/r9_4_450bps_mCpG.model > /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM07541_2_methylation_results_hg37.txt
+
+
+
+## Sample GM07861
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/repeat_config_150_flanks.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/150_flanks/GM07861_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM07861_count_results_hg37.txt | python3  /app/scripts/STRique.py plot --width 64 /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn --output /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM07861_plot_width_64 --dpi 300
+
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07861.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/repeat_config_150_flanks.tsv --config /app/configs/STRique.json --mod_model /app/models/r9_4_450bps_mCpG.model > /work/sdularsen/tine/nanoporeData/strique/150_flanks/GM07861_2_methylation_results_hg37.txt
+
+
+
+##### Changed Flanks 175 
+
+# GM05538
+
+
+
+##### Changed Flanks 200
+
+## Sample GM04284
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/200_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/200_flanks/GM04284_count_results_hg37_2.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/200_flanks/GM04284_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM04284/reads_GM04284.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/200_flanks/GM04284 --dpi 300
+
+
+## Sample GM05538
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM05538/reads_GM05538.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/200_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/200_flanks/GM05538_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/200_flanks/GM05538_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM05538/reads_GM05538.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/200_flanks/GM05538 --dpi 300
+
+
+## Sample GM20239
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM20239/reads_GM20239.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/200_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/200_flanks/GM20239_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/200_flanks/GM20239_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM20239/reads_GM20239.fofn --output /work/sdularsen/tine/nanoporeData/strique/200_flanks/GM20239 --dpi 300
+
+
+## Sample GM06891
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM06891/reads_GM06891.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/200_repeat_config.tsv  --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/200_flanks/GM06891_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/200_flanks/GM06891_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM06891/reads_GM06891.fofn --output /work/sdularsen/tine/nanoporeData/strique/200_flanks/GM06891 --dpi 300
+
+
+## Sample GM07541
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM07541/reads_GM07541.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/200_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/200_flanks/GM07541_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/200_flanks/GM07541_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM07541/reads_GM07541.fofn --output /work/sdularsen/tine/nanoporeData/strique/200_flanks/GM07541 --dpi 300
+
+
+## Sample GM07861
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM07861/reads_GM07861.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/200_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/200_flanks/GM07861_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/200_flanks/GM07861_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM07861/reads_GM07861.fofn --output /work/sdularsen/tine/nanoporeData/strique/200_flanks/GM07861 --dpi 300
+
+
+
+
+
+
+
+
+##### Changed Flanks 250
+
+## Sample GM04284
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/250_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM04284_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM04284_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM04284 --dpi 300
+
+
+## Sample GM05538
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/250_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM05538_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM05538_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM05538 --dpi 300
+
+
+## Sample GM20239
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/250_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM20239_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM20239_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM20239 --dpi 300
+
+
+## Sample GM06891
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/250_repeat_config.tsv  --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM06891_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM06891_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM06891 --dpi 300
+
+
+## Sample GM07541
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/250_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM07541_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM07541_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM07541 --dpi 300
+
+
+## Sample GM07861
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/250_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM07861_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM07861_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM07861 --dpi 300
+
+
+
+
+
+##### Changed Flanks 300
+
+## Sample GM04284
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/300_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/300_flanks/GM04284_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/300_flanks/GM04284_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM04284/reads_GM04284.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/300_flanks/GM04284 --dpi 300
+
+
+## Sample GM05538
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/300_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/300_flanks/GM05538_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/300_flanks/GM05538_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM05538/reads_GM05538.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/300_flanks/GM05538 --dpi 300
+
+
+## Sample GM20239
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/300_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/300_flanks/GM20239_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/300_flanks/GM20239_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM20239/reads_GM20239.fofn --output /work/sdularsen/tine/nanoporeData/strique/300_flanks/GM20239 --dpi 300
+
+
+## Sample GM06891
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/300_repeat_config.tsv  --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/300_flanks/GM06891_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/300_flanks/GM06891_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM06891/reads_GM06891.fofn --output /work/sdularsen/tine/nanoporeData/strique/300_flanks/GM06891 --dpi 300
+
+
+## Sample GM07541
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/300_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/300_flanks/GM07541_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/300_flanks/GM07541_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM07541/reads_GM07541.fofn --output /work/sdularsen/tine/nanoporeData/strique/300_flanks/GM07541 --dpi 300
+
+
+## Sample GM07861
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/300_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/300_flanks/GM07861_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/300_flanks/GM07861_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM07861/reads_GM07861.fofn --output /work/sdularsen/tine/nanoporeData/strique/300_flanks/GM07861 --dpi 300
+
+
+
+
+
+##### Changed Flanks 500
+
+## Sample GM04284
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/500_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/500_flanks/GM04284_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/500_flanks/GM04284_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM04284/reads_GM04284.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/500_flanks/GM04284 --dpi 300
+
+
+## Sample GM05538
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/500_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/500_flanks/GM05538_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/500_flanks/GM05538_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM05538/reads_GM05538.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/500_flanks/GM05538 --dpi 300
+
+
+## Sample GM20239
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/500_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/500_flanks/GM20239_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/500_flanks/GM20239_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM20239/reads_GM20239.fofn --output /work/sdularsen/tine/nanoporeData/strique/500_flanks/GM20239 --dpi 300
+
+
+## Sample GM06891
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/500_repeat_config.tsv  --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/500_flanks/GM06891_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/500_flanks/GM06891_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM06891/reads_GM06891.fofn --output /work/sdularsen/tine/nanoporeData/strique/500_flanks/GM06891 --dpi 300
+
+
+## Sample GM07541
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/500_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/500_flanks/GM07541_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/500_flanks/GM07541_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM07541/reads_GM07541.fofn --output /work/sdularsen/tine/nanoporeData/strique/500_flanks/GM07541 --dpi 300
+
+
+## Sample GM07861
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/500_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/500_flanks/GM07861_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/500_flanks/GM07861_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/data_whole_genome_sequencing/fast5/G87-GM07861/reads_GM07861.fofn --output /work/sdularsen/tine/nanoporeData/strique/500_flanks/GM07861 --dpi 300
+
+
+
+
+
+##### Changed Flanks 750
+
+## Sample GM04284
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/750_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/750_flanks/GM04284_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/750_flanks/GM04284_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM04284 --dpi 300
+
+
+## Sample GM05538
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/750_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/750_flanks/GM05538_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/750_flanks/GM05538_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM05538 --dpi 300
+
+
+## Sample GM20239
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/750_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/750_flanks/GM20239_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/750_flanks/GM20239_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM20239 --dpi 300
+
+
+## Sample GM06891
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/750_repeat_config.tsv  --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/750_flanks/GM06891_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/750_flanks/GM06891_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM06891 --dpi 300
+
+
+## Sample GM07541
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/750_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/750_flanks/GM07541_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/750_flanks/GM07541_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM07541 --dpi 300
+
+
+## Sample GM07861
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/750_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/750_flanks/GM07861_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/750_flanks/GM07861_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/250_flanks/GM07861 --dpi 300
+
+
+
+
+
+
+##### Changed Flanks 1000
+
+## Sample GM04284
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/1000_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM04284_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM04284_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM04284 --dpi 300
+
+
+## Sample GM05538
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/1000_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM05538_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM05538_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM05538 --dpi 300
+
+
+## Sample GM20239
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/1000_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM20239_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM20239_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM20239 --dpi 300
+
+
+## Sample GM06891
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/1000_repeat_config.tsv  --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM06891_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM06891_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM06891 --dpi 300
+
+
+## Sample GM07541
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/1000_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM07541_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM07541_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM07541 --dpi 300
+
+
+## Sample GM07861
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/1000_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM07861_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM07861_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/1000_flanks/GM07861 --dpi 300
+
+
+
+
+
+
+
+##### Changed Flanks 2000
+
+## Sample GM04284
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/2000_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM04284_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM04284_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM04284 --dpi 300
+
+
+## Sample GM05538
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/2000_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM05538_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM05538_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM05538 --dpi 300
+
+
+## Sample GM20239
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/2000_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM20239_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM20239_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM20239 --dpi 300
+
+
+## Sample GM06891
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/2000_repeat_config.tsv  --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM06891_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM06891_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM06891 --dpi 300
+
+
+## Sample GM07541
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/2000_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM07541_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM07541_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM07541 --dpi 300
+
+
+## Sample GM07861
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/2000_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM07861_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM07861_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/2000_flanks/GM07861 --dpi 300
+
+
+
+
+
+##### Changed Flanks 3000
+
+## Sample GM04284
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/3000_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM04284_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM04284_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM04284/reads_GM04284.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM04284 --dpi 300
+
+
+## Sample GM05538
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/3000_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM05538_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM05538_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM05538/reads_GM05538.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM05538 --dpi 300
+
+
+## Sample GM20239
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/3000_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM20239_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM20239_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM20239/reads_GM20239.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM20239 --dpi 300
+
+
+## Sample GM06891
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/3000_repeat_config.tsv  --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM06891_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM06891_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM06891/reads_GM06891.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM06891 --dpi 300
+
+
+## Sample GM07541
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/3000_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM07541_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM07541_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM07541/reads_GM07541.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM07541 --dpi 300
+
+
+## Sample GM07861
+cat /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.sam | python3 /app/scripts/STRique.py count /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn /app/models/r9_4_450bps.model /work/sdularsen/tine/nanoporeData/kommandoer/3000_repeat_config.tsv --config /app/configs/STRique.json > /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM07861_count_results_hg37.txt
+
+cat /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM07861_count_results.txt | python3  /app/scripts/STRique.py plot /work/sdularsen/tine/nanoporeData/fast5/G87-GM07861/reads_GM07861.fofn --output /work/sdularsen/tine/nanoporeData/strique/new/3000_flanks/GM07861 --dpi 300
+
+
