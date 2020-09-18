@@ -1,0 +1,98 @@
+## Installation ?
+
+
+# Activate environment
+conda activate tg_env
+
+## Preparing a reference genome: option 2, with repeat-masking
+windowmasker -mk_counts -in /work/sdularsen/tine/nanoporeData/tandem_genotypes/Homo_sapiens_assembly19.fasta \
+> /work/sdularsen/tine/nanoporeData/tandem_genotypes/hg19_homo_sapiens_assembly19.wmstat
+
+windowmasker -ustat /work/sdularsen/tine/nanoporeData/tandem_genotypes/hg19_homo_sapiens_assembly19.wmstat \
+ -outfmt fasta -in /work/sdularsen/tine/nanoporeData/tandem_genotypes/Homo_sapiens_assembly19.fasta \
+> /work/sdularsen/tine/nanoporeData/tandem_genotypes/Homo_sapiens_assembly19_2_wm.fasta
+
+lastdb -P8 -uNEAR -R11 -c mydb /work/sdularsen/tine/nanoporeData/tandem_genotypes/Homo_sapiens_assembly19_2_wm.fasta
+
+
+## Subset fastq
+conda activate minimap2
+
+# GM04284
+samtools view -b /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam 4 X > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284_chr4X.bam
+samtools view /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284_chr4X.bam | cut -f 1 > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284_chr4X_read_ids.txt
+seqtk subseq /work/sdularsen/tine/nanoporeData/fastq/G87-GM04284.fastq.gz /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284_chr4X_read_ids.txt \
+| gzip > /work/sdularsen/tine/nanoporeData/fastq/G87-GM04284_filtered.fastq
+
+# GM05538
+samtools view -b /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.bam 4 X > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538_chr4X.bam
+samtools view /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538_chr4X.bam | cut -f 1 > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538_chr4X_read_ids.txt
+seqtk subseq /work/sdularsen/tine/nanoporeData/fastq/G87-GM05538.fastq.gz /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538_chr4X_read_ids.txt \
+| gzip > /work/sdularsen/tine/nanoporeData/fastq/G87-GM05538_filtered.fastq
+
+# GM06891
+samtools view -b /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.bam 4 X > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891_chr4X.bam
+samtools view /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891_chr4X.bam | cut -f 1 > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891_chr4X_read_ids.txt
+seqtk subseq /work/sdularsen/tine/nanoporeData/fastq/G87-GM06891.fastq.gz /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891_chr4X_read_ids.txt \
+| gzip > /work/sdularsen/tine/nanoporeData/fastq/G87-GM06891_filtered.fastq
+
+# GM07541
+samtools view -b /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam 4 X > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541_chr4X.bam
+samtools view /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541_chr4X.bam | cut -f 1 > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541_chr4X_read_ids.txt
+seqtk subseq /work/sdularsen/tine/nanoporeData/fastq/G87-GM07541.fastq.gz /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541_chr4X_read_ids.txt \
+| gzip > /work/sdularsen/tine/nanoporeData/fastq/G87-GM07541_filtered.fastq
+
+# GM07861
+samtools view -b /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.bam 4 X > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861_chr4X.bam
+samtools view /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861_chr4X.bam | cut -f 1 > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861_chr4X_read_ids.txt
+seqtk subseq /work/sdularsen/tine/nanoporeData/fastq/G87-GM07861.fastq.gz /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861_chr4X_read_ids.txt \
+| gzip > /work/sdularsen/tine/nanoporeData/fastq/G87-GM07861_filtered.fastq
+
+# GM20239
+samtools view -b /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam 4 X > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239_chr4X.bam
+samtools view /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239_chr4X.bam | cut -f 1 > /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239_chr4X_read_ids.txt
+seqtk subseq /work/sdularsen/tine/nanoporeData/fastq/G87-GM20239.fastq.gz /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239_chr4X_read_ids.txt \
+| gzip > /work/sdularsen/tine/nanoporeData/fastq/G87-GM20239_filtered.fastq
+
+
+
+## Substitution and gaps
+conda activate tg_env
+last-train -P6 -Q0 mydb /work/sdularsen/tine/nanoporeData/fastq/G87-GM04284_filtered.fastq.gz > /work/sdularsen/tine/nanoporeData/tandem_genotypes/GM04284_subset.par
+last-train -P6 -Q0 mydb /work/sdularsen/tine/nanoporeData/fastq/G87-GM05538_filtered.fastq.gz > /work/sdularsen/tine/nanoporeData/tandem_genotypes/GM05538_subset.par
+last-train -P6 -Q0 mydb /work/sdularsen/tine/nanoporeData/fastq/G87-GM06891_filtered.fastq.gz > /work/sdularsen/tine/nanoporeData/tandem_genotypes/GM06891_subset.par
+last-train -P6 -Q0 mydb /work/sdularsen/tine/nanoporeData/fastq/G87-GM07541_filtered.fastq.gz > /work/sdularsen/tine/nanoporeData/tandem_genotypes/GM07541_subset.par
+last-train -P6 -Q0 mydb /work/sdularsen/tine/nanoporeData/fastq/G87-GM07861_filtered.fastq.gz > /work/sdularsen/tine/nanoporeData/tandem_genotypes/GM07861_subset.par
+last-train -P6 -Q0 mydb /work/sdularsen/tine/nanoporeData/fastq/G87-GM20239_filtered.fastq.gz > /work/sdularsen/tine/nanoporeData/tandem_genotypes/GM20239_subset.par
+
+
+## Aligning DNA Sequences
+lastal -P6 -p myseq.par mydb /work/sdularsen/tine/nanoporeData/fastq/G87-GM04284_filtered.fastq | last-split -fMAF | gzip > /work/sdularsen/tine/nanoporeData/tandem_genotypes/GM04284_subset.maf.gz
+lastal -P6 -p myseq.par mydb /work/sdularsen/tine/nanoporeData/fastq/G87-GM05538_filtered.fastq | last-split -fMAF | gzip > /work/sdularsen/tine/nanoporeData/tandem_genotypes/GM05538_subset.maf.gz
+lastal -P6 -p myseq.par mydb /work/sdularsen/tine/nanoporeData/fastq/G87-GM06891_filtered.fastq | last-split -fMAF | gzip > /work/sdularsen/tine/nanoporeData/tandem_genotypes/GM06891_subset.maf.gz
+lastal -P6 -p myseq.par mydb /work/sdularsen/tine/nanoporeData/fastq/G87-GM07541_filtered.fastq | last-split -fMAF | gzip > /work/sdularsen/tine/nanoporeData/tandem_genotypes/GM07541_subset.maf.gz
+lastal -P6 -p myseq.par mydb /work/sdularsen/tine/nanoporeData/fastq/G87-GM07861_filtered.fastq | last-split -fMAF | gzip > /work/sdularsen/tine/nanoporeData/tandem_genotypes/GM07861_subset.maf.gz
+lastal -P6 -p myseq.par mydb /work/sdularsen/tine/nanoporeData/fastq/G87-GM20239_filtered.fastq | last-split -fMAF | gzip > /work/sdularsen/tine/nanoporeData/tandem_genotypes/GM20239_subset.maf.gz
+
+
+## Run Tandem-Genotypes
+tandem-genotypes -g refGene.txt microsat.txt /work/sdularsen/tine/nanoporeData/tandem_genotypes/GM04284_subset.maf.gz > /work/sdularsen/tine/nanoporeData/tandem_genotypes/GM04284_subset_tg_results.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
