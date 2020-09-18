@@ -1,5 +1,5 @@
 ### Illumina-Guided HP and Longshot Comparison ####
-
+# Called "llumina_guided_hp_and_longhsot_comparison.R" on my PC
 # This code is creating Venn Diagrams for the read-IDs from the two haplotype phasing methods
 
 #################################################################################################################################
