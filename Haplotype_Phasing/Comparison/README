@@ -1,2 +1,9 @@
 Information on how to use the documents in this folder
 #######################################################
+
+### VennDiagrams_HP_Comparisons.R
+Creates Venn Diagrams to show how many read-IDs are identical between Illumina-Guided HP and LongShot HP.
+This is done to compare results further down the analysis pipeline, as haplotype tags are random 
+  (i.e. reads tagged with HP1 by Illumina-guided HP could have a lot of reads in common with reads tagged with HP2 by LongShot).
+When the diagrams are made one can analyse the HP tags across haplotype phasing methods.
+
