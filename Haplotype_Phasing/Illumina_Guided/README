@@ -1,0 +1,11 @@
+Information on how to use the documents in this folder.
+#######################################################
+
+### Illumina_Guided_HP_FMR1_and_HTT_2.sh & SNV_Base_Identification2.py
+Is run in terminal by calling 'bash Illumina_Guided_HP_FMR1_and_HTT_2.sh'.
+This script calls SNV_Base_Identification2.py.
+The output is data frames with ONT read-IDs as rows and Illumina SNV positions as columns. The dataframe is filled with bases (A,T,C,G).
+
+### phasing_nanopore_reads_HC_gowers_dist_R.r
+The dataframes from above are being used to phase the reads into two haplotypes.
+
