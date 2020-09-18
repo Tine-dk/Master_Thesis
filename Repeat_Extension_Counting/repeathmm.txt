@@ -1,0 +1,580 @@
+### Installation #############################################################################################################################################################
+# Step 1: Download RepeatHMM
+git clone https://github.com/WGLab/RepeatHMM
+# Step 2: Create Environment
+cd RepeatHMM
+conda env create -f environment.yml
+source activate repeathmmenv
+cd bin/scripts/UnsymmetricPairAlignment
+make
+cd ../../../
+
+
+### Create haplotype phased BAM files ###############################################################################################################
+# Assume you have a list of specific reads you would like to extract from an alignment file. 
+# You have the ID of these reads in a file called IDs.txt . A fast way to this is to use the tool fgrep.
+srun -A sdularsen_slim --time 24:00:00 --pty bash -i
+srun -A sdularsen_fat --time 24:00:00 --pty bash -i
+conda activate minimap2
+
+## GM04284 HTT
+# Illumina Guided HP 1
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM04284_HTT_Illumina_Guided_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM04284_HTT_Illumina_Guided_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM04284_HTT_Illumina_Guided_HP_1.bam
+
+# Illumina Guided HP 2
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM04284_HTT_Illumina_Guided_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM04284_HTT_Illumina_Guided_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM04284_HTT_Illumina_Guided_HP_2.bam
+
+# Longshot HP 1
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM04284_HTT_Longshot_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM04284_HTT_Longshot_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM04284_HTT_Longshot_HP_1.bam
+
+# Longshot HP 2
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM04284_HTT_Longshot_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM04284_HTT_Longshot_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM04284_HTT_Longshot_HP_2.bam
+
+
+
+## GM04284 FMR1
+# Illumina Guided HP 1 (NOT RUN)
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM04284_HTT_Illumina_Guided_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM04284_HTT_Illumina_Guided_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM04284_HTT_Illumina_Guided_HP_1.bam
+
+# Illumina Guided HP 2 (NOT RUN)
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM04284_HTT_Illumina_Guided_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM04284_HTT_Illumina_Guided_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM04284_HTT_Illumina_Guided_HP_2.bam
+
+# Longshot HP 1 (NOT RUN)
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM04284_FMR1_Longshot_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM04284_HTT_Longshot_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM04284_HTT_Longshot_HP_1.bam
+
+# Longshot HP 2 (NOT RUN)
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM04284_FMR1_Longshot_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM04284_HTT_Longshot_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM04284_HTT_Longshot_HP_2.bam
+
+
+
+## GM05538 HTT
+# Illumina Guided HP 1
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM05538_HTT_Illumina_Guided_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM05538_HTT_Illumina_Guided_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM05538_HTT_Illumina_Guided_HP_1.bam
+
+# Illumina Guided HP 2
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM05538_HTT_Illumina_Guided_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM05538_HTT_Illumina_Guided_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM05538_HTT_Illumina_Guided_HP_2.bam
+
+# Longshot HP 1
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM05538_HTT_Longshot_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM05538_HTT_Longshot_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM05538_HTT_Longshot_HP_1.bam
+
+# Longshot HP 2
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM05538_HTT_Longshot_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM05538_HTT_Longshot_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM05538_HTT_Longshot_HP_2.bam
+
+
+## GM06891 HTT
+# Illumina Guided HP 1
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM06891_HTT_Illumina_Guided_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM06891_HTT_Illumina_Guided_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM06891_HTT_Illumina_Guided_HP_1.bam
+
+# Illumina Guided HP 2
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM06891_HTT_Illumina_Guided_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM06891_HTT_Illumina_Guided_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM06891_HTT_Illumina_Guided_HP_2.bam
+
+# Longshot HP 1
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM06891_HTT_Longshot_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM06891_HTT_Longshot_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM06891_HTT_Longshot_HP_1.bam
+
+# Longshot HP 2
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM06891_HTT_Longshot_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM06891_HTT_Longshot_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM06891_HTT_Longshot_HP_2.bam
+
+## GM07541 HTT
+# Illumina Guided HP 1
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07541_HTT_Illumina_Guided_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07541_HTT_Illumina_Guided_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07541_HTT_Illumina_Guided_HP_1.bam
+
+# Illumina Guided HP 2
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07541_HTT_Illumina_Guided_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07541_HTT_Illumina_Guided_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07541_HTT_Illumina_Guided_HP_2.bam
+
+# Longshot HP 1
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07541_HTT_Longshot_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07541_HTT_Longshot_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07541_HTT_Longshot_HP_1.bam
+
+# Longshot HP 2
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07541_HTT_Longshot_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07541_HTT_Longshot_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07541_HTT_Longshot_HP_2.bam
+
+## GM07541 FMR1
+# Illumina Guided HP 1
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07541_FMR1_Illumina_Guided_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07541_FMR1_Illumina_Guided_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07541_FMR1_Illumina_Guided_HP_1.bam
+
+# Illumina Guided HP 2
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07541_FMR1_Illumina_Guided_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07541_FMR1_Illumina_Guided_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07541_FMR1_Illumina_Guided_HP_2.bam
+
+# Longshot HP 1
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07541_FMR1_Longshot_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07541_FMR1_Longshot_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07541_FMR1_Longshot_HP_1.bam
+
+# Longshot HP 2
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07541_FMR1_Longshot_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07541_FMR1_Longshot_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07541_FMR1_Longshot_HP_2.bam
+
+
+## GM07861 HTT
+# Illumina Guided HP 1
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07861_HTT_Illumina_Guided_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07861_HTT_Illumina_Guided_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07861_HTT_Illumina_Guided_HP_1.bam
+
+# Illumina Guided HP 2
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07861_HTT_Illumina_Guided_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07861_HTT_Illumina_Guided_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07861_HTT_Illumina_Guided_HP_2.bam
+
+# Longshot HP 1
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07861_HTT_Longshot_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07861_HTT_Longshot_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07861_HTT_Longshot_HP_1.bam
+
+# Longshot HP 2
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07861_HTT_Longshot_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07861_HTT_Longshot_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07861_HTT_Longshot_HP_2.bam
+
+
+## GM20239 HTT
+# Illumina Guided HP 1
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM20239_HTT_Illumina_Guided_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM20239_HTT_Illumina_Guided_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM20239_HTT_Illumina_Guided_HP_1.bam
+
+# Illumina Guided HP 2
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM20239_HTT_Illumina_Guided_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM20239_HTT_Illumina_Guided_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM20239_HTT_Illumina_Guided_HP_2.bam
+
+# Longshot HP 1
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM20239_HTT_Longshot_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM20239_HTT_Longshot_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM20239_HTT_Longshot_HP_1.bam
+
+# Longshot HP 2
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM20239_HTT_Longshot_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM20239_HTT_Longshot_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM20239_HTT_Longshot_HP_2.bam
+
+
+## GM20239 FMR1
+# Illumina Guided HP 1
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM20239_FMR1_Illumina_Guided_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM20239_FMR1_Illumina_Guided_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM20239_FMR1_Illumina_Guided_HP_1.bam
+
+# Illumina Guided HP 2
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM20239_FMR1_Illumina_Guided_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM20239_FMR1_Illumina_Guided_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM20239_FMR1_Illumina_Guided_HP_2.bam
+
+# Longshot HP 1
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM20239_FMR1_Longshot_HP_1.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM20239_FMR1_Longshot_HP_1.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM20239_FMR1_Longshot_HP_1.bam
+
+# Longshot HP 2
+samtools view -h /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam | \
+grep -e '^@' -f /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM20239_FMR1_Longshot_HP_2.txt | \
+samtools view -bS - > /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM20239_FMR1_Longshot_HP_2.bam
+samtools index /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM20239_FMR1_Longshot_HP_2.bam
+
+
+
+
+
+###Usage with BAM file #########################################################################################################################################
+python repeatHMM.py BAMinput --Onebamfile XXX.bam --repeatName HTT;
+
+## GM04284 HTT
+# NO HP
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam  \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM04284_HTT_No_HP;
+
+# Illumina-Guided HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM04284_HTT_Illumina_Guided_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM04284_HTT_Illumina_Guided_HP_1;
+
+# Illumina-Guided HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM04284_HTT_Illumina_Guided_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM04284_HTT_Illumina_Guided_HP_2;
+
+# Longshot HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM04284_HTT_Longshot_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM04284_HTT_Longshot_HP_1;
+
+# Longshot HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM04284_HTT_Longshot_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM04284_HTT_Longshot_HP_2;
+
+
+
+
+## GM04284 FMR1
+# NO HP
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam  \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM04284_FMR1_No_HP;
+
+
+
+## GM05538 HTT
+# NO HP
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.bam  \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM05538_HTT_No_HP;
+
+# Illumina-Guided HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM05538_HTT_Illumina_Guided_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM05538_HTT_Illumina_Guided_HP_1;
+
+# Illumina-Guided HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM05538_HTT_Illumina_Guided_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM05538_HTT_Illumina_Guided_HP_2;
+
+# Longshot HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM05538_HTT_Longshot_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM05538_HTT_Longshot_HP_1;
+
+# Longshot HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM05538_HTT_Longshot_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM05538_HTT_Longshot_HP_2;
+
+
+## GM05538 FMR1
+# NO HP
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.bam  \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM05538_FMR1_No_HP;
+
+# Illumina-Guided HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM05538_FMR1_Illumina_Guided_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM05538_FMR1_Illumina_Guided_HP_1;
+
+# Illumina-Guided HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM05538_FMR1_Illumina_Guided_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM05538_FMR1_Illumina_Guided_HP_2;
+
+# Longshot HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM05538_FMR1_Longshot_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM05538_FMR1_Longshot_HP_1;
+
+# Longshot HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longhsot/GM05538_FMR1_Longshot_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM05538_FMR1_Longshot_HP_2;
+
+
+## GM06891 HTT
+# NO HP
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.bam  \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM06891_HTT_No_HP;
+
+# Illumina-Guided HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM06891_HTT_Illumina_Guided_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM06891_HTT_Illumina_Guided_HP_1;
+
+# Illumina-Guided HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM06891_HTT_Illumina_Guided_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM06891_HTT_Illumina_Guided_HP_2;
+
+# Longshot HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM06891_HTT_Longshot_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM06891_HTT_Longshot_HP_1;
+
+# Longshot HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM06891_HTT_Longshot_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM06891_HTT_Longshot_HP_2;
+
+
+## GM06891 FMR1
+# NO HP
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.bam  \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM06891_FMR1_No_HP;
+
+
+## GM07541 HTT
+# NO HP
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam  \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM07541_HTT_No_HP;
+
+# Illumina-Guided HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07541_HTT_Illumina_Guided_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM07541_HTT_Illumina_Guided_HP_1;
+
+# Illumina-Guided HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07541_HTT_Illumina_Guided_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM07541_HTT_Illumina_Guided_HP_2;
+
+# Longshot HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07541_HTT_Longshot_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM07541_HTT_Longshot_HP_1;
+
+# Longshot HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07541_HTT_Longshot_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM07541_HTT_Longshot_HP_2;
+
+
+## GM07541 FMR1
+# NO HP
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam  \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM07541_FMR1_No_HP;
+
+# Illumina-Guided HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07541_FMR1_Illumina_Guided_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM07541_FMR1_Illumina_Guided_HP_1;
+
+# Illumina-Guided HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07541_FMR1_Illumina_Guided_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM07541_FMR1_Illumina_Guided_HP_2;
+
+# Longshot HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07541_FMR1_Longshot_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM07541_FMR1_Longshot_HP_1;
+
+# Longshot HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07541_FMR1_Longshot_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM07541_FMR1_Longshot_HP_2;
+
+
+
+## GM07861 HTT
+# NO HP
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.bam  \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM07861_HTT_No_HP;
+
+# Illumina-Guided HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07861_HTT_Illumina_Guided_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM07861_HTT_Illumina_Guided_HP_1;
+
+# Illumina-Guided HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM07861_HTT_Illumina_Guided_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM07861_HTT_Illumina_Guided_HP_2;
+
+# Longshot HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07861_HTT_Longshot_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM07861_HTT_Longshot_HP_1;
+
+# Longshot HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM07861_HTT_Longshot_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM07861_HTT_Longshot_HP_2;
+
+## GM07861 FMR1
+# NO HP
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.bam  \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM07861_FMR1_No_HP;
+
+
+## GM20239 HTT
+# NO HP
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam  \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM20239_HTT_No_HP;
+
+# Illumina-Guided HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM20239_HTT_Illumina_Guided_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM20239_HTT_Illumina_Guided_HP_1;
+
+# Illumina-Guided HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM20239_HTT_Illumina_Guided_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM20239_HTT_Illumina_Guided_HP_2;
+
+# Longshot HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM20239_HTT_Longshot_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM20239_HTT_Longshot_HP_1;
+
+# Longshot HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM20239_HTT_Longshot_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName HTT --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM20239_HTT_Longshot_HP_2;
+
+
+
+## GM20239 FMR1
+# NO HP
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam  \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM20239_FMR1_No_HP;
+
+# Illumina-Guided HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM20239_FMR1_Illumina_Guided_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM20239_FMR1_Illumina_Guided_HP_1;
+
+# Illumina-Guided HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_illumina/GM20239_FMR1_Illumina_Guided_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM20239_FMR1_Illumina_Guided_HP_2;
+
+# Longshot HP 1
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM20239_FMR1_Longshot_HP_1.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM20239_FMR1_Longshot_HP_1;
+
+# Longshot HP 2
+python repeatHMM.py BAMinput --Onebamfile /work/sdularsen/tine/nanoporeData/haplotyped_longshot/GM20239_FMR1_Longshot_HP_2.bam \
+--hg hg19 --hgfile  /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--repeatName FMR1 --MinSup 1 --FlankLength 150 --SeqTech Nanopore \
+--UserDefinedUniqID GM20239_FMR1_Longshot_HP_2;
+
+
+
+
+
+
+

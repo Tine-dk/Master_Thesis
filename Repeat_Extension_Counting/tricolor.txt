@@ -1,0 +1,391 @@
+########################################################################################################################
+###################################################### TRiCoLOR ########################################################
+########################################################################################################################
+
+### Installation ######################################################################################################
+
+conda create --name tricolorenv python==3.7  #create python 3 env
+conda install -y -n tricolorenv -c bioconda samtools bedtools bedops minimap2 bcftools pysam pyfaidx cyvcf2 #Install dependencies
+conda activate tricolorenv
+git clone --recursive https://github.com/davidebolo1993/TRiCoLOR
+cd TRiCoLOR
+conda install -c anaconda cmake
+#wget ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-10.2.0/gcc-10.2.0.tar.gz 
+./configure
+python setup.py install
+TRiCoLOR --help #Checks that installation worked
+
+
+
+
+#### Usage of Tricolors###########################################################################################################################
+# It can't figure out to go out of a folder and into a new one so the results are going to be in the folders with the haplotype phased BAM files
+# Only one screen at a time otherwise the 2nd 3rd etc will not run properly
+TRiCoLOR SENSoR -bam <HAPLOTYPE1.BAM> <HAPLOTYPE2.BAM> -o <OUTPUTSENSOR>
+
+srun -A sdularsen_fat --time 24:00:00 --pty bash -i
+
+### SENSoR ########################################################################################################################
+## GM04284 HTT
+# Illumina-Guided HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_illumina
+TRiCoLOR SENSoR -bam GM04284_HTT_Illumina_Guided_HP_1.bam GM04284_HTT_Illumina_Guided_HP_2.bam --chromosomes 4 X -c 4 -l 15 \
+-id 100 -od 100 -s 15 -e 1.23 -o TRiCoLOR/GM04284_SENSoR_Illumina_Guided
+# Longshot HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_longshot
+TRiCoLOR SENSoR -bam GM04284_HTT_Longshot_HP_1.bam GM04284_HTT_Longshot_HP_2.bam --chromosomes 4 X -c 4 -l 15 \
+-id 100 -od 100 -s 15 -e 1.23 -o TRiCoLOR/GM04284_SENSoR_Longshot
+
+## GM05538 HTT
+# Illumina-Guided HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_illumina
+TRiCoLOR SENSoR -bam GM05538_HTT_Illumina_Guided_HP_1.bam GM05538_HTT_Illumina_Guided_HP_2.bam --chromosomes 4 X -c 4 -l 15 \
+-id 100 -od 100 -s 15 -e 1.23 -o TRiCoLOR/GM05538_SENSoR_Illumina_Guided
+# Longshot HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_longshot
+TRiCoLOR SENSoR -bam GM05538_HTT_Longshot_HP_1.bam GM05538_HTT_Longshot_HP_2.bam --chromosomes 4 X -c 4 -l 15 \
+-id 100 -od 100 -s 15 -e 1.23 -o TRiCoLOR/GM05538_SENSoR_Longshot
+
+## GM06891 HTT
+# Illumina-Guided HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_illumina
+TRiCoLOR SENSoR -bam GM06891_HTT_Illumina_Guided_HP_1.bam GM06891_HTT_Illumina_Guided_HP_2.bam --chromosomes 4 X -c 4 -l 15 \
+-id 100 -od 100 -s 15 -e 1.23 -o TRiCoLOR/GM06891_SENSoR_Illumina_Guided
+# Longshot HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_longshot
+TRiCoLOR SENSoR -bam GM06891_HTT_Longshot_HP_1.bam GM06891_HTT_Longshot_HP_2.bam --chromosomes 4 X -c 4 -l 15 \
+-id 100 -od 100 -s 15 -e 1.23 -o TRiCoLOR/GM06891_SENSoR_Longshot
+
+## GM07541 HTT
+# Illumina-Guided HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_illumina
+TRiCoLOR SENSoR -bam GM07541_HTT_Illumina_Guided_HP_1.bam GM07541_HTT_Illumina_Guided_HP_2.bam --chromosomes 4 X -c 4 -l 15 \
+-id 100 -od 100 -s 15 -e 1.23 -o TRiCoLOR/GM07541_SENSoR_Illumina_Guided
+# Longshot HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_longshot
+TRiCoLOR SENSoR -bam GM07541_HTT_Longshot_HP_1.bam GM07541_HTT_Longshot_HP_2.bam --chromosomes 4 X -c 4 -l 15 \
+-id 100 -od 100 -s 15 -e 1.23 -o TRiCoLOR/GM07541_SENSoR_Longshot
+
+## GM07541 FMR1
+# Illumina-Guided HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_illumina
+TRiCoLOR SENSoR -bam GM07541_FMR1_Illumina_Guided_HP_1.bam GM07541_FMR1_Illumina_Guided_HP_2.bam --chromosomes 4 X -c 4 -l 15 \
+-id 100 -od 100 -s 15 -e 1.23 -o TRiCoLOR/GM07541_FMR1_SENSoR_Illumina_Guided
+# Longshot HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_longshot
+TRiCoLOR SENSoR -bam GM07541_FMR1_Longshot_HP_1.bam GM07541_FMR1_Longshot_HP_2.bam --chromosomes 4 X -c 4 -l 15 \
+-id 100 -od 100 -s 15 -e 1.23 -o TRiCoLOR/GM07541_FMR1_SENSoR_Longshot
+
+## GM07861 HTT
+# Illumina-Guided HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_illumina
+TRiCoLOR SENSoR -bam GM07861_HTT_Illumina_Guided_HP_1.bam GM07861_HTT_Illumina_Guided_HP_2.bam --chromosomes 4 X -c 4 -l 15 \
+-id 100 -od 100 -s 15 -e 1.23 -o TRiCoLOR/GM07861_SENSoR_Illumina_Guided
+# Longshot HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_longshot
+TRiCoLOR SENSoR -bam GM07861_HTT_Longshot_HP_1.bam GM07861_HTT_Longshot_HP_2.bam --chromosomes 4 X -c 4 -l 15 \
+-id 100 -od 100 -s 15 -e 1.23 -o TRiCoLOR/GM07861_SENSoR_Longshot
+
+## GM20239 HTT
+# Illumina-Guided HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_illumina
+TRiCoLOR SENSoR -bam GM20239_HTT_Illumina_Guided_HP_1.bam GM20239_HTT_Illumina_Guided_HP_2.bam --chromosomes 4 X -c 4 -l 15 \
+-id 100 -od 100 -s 15 -e 1.23 -o TRiCoLOR/GM20239_SENSoR_Illumina_Guided
+# Longshot HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_longshot
+TRiCoLOR SENSoR -bam GM20239_HTT_Longshot_HP_1.bam GM20239_HTT_Longshot_HP_2.bam --chromosomes 4 X -c 4 -l 15 \
+-id 100 -od 100 -s 15 -e 1.23 -o TRiCoLOR/GM20239_SENSoR_Longshot
+
+## GM20239 FMR1
+# Illumina-Guided HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_illumina
+TRiCoLOR SENSoR -bam GM20239_FMR1_Illumina_Guided_HP_1.bam GM20239_FMR1_Illumina_Guided_HP_2.bam --chromosomes 4 X -c 4 -l 15 \
+-id 100 -od 100 -s 15 -e 1.23 -o TRiCoLOR/GM20239_FMR1_SENSoR_Illumina_Guided
+# Longshot HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_longshot
+TRiCoLOR SENSoR -bam GM20239_FMR1_Longshot_HP_1.bam GM20239_FMR1_Longshot_HP_2.bam --chromosomes 4 X -c 4 -l 15 \
+-id 100 -od 100 -s 15 -e 1.23 -o TRiCoLOR/GM20239_FMR1_SENSoR_Longshot
+
+
+
+
+### REFER #####################################################################################################
+# As we are interested on further profiling a single TR, which is known to occur at chr20:17553794-17553824, we can ignore other regions.
+# grep -P "^4\t3076603" sensor_son/TRiCoLOR.srt.bed > TRiCoLOR/TRiCoLOR_HTT.srt.fltrd.bed
+# grep -P "^X\t146993569" sensor_son/TRiCoLOR.srt.bed > TRiCoLOR/TRiCoLOR_FMR1.srt.fltrd.bed
+
+
+
+## GM04284 HTT
+# Illumina-Guided HP
+cd work/sdularsen/tine/nanoporeData/haplotyped_illumina
+#grep -P "^4\t3075|^4\t3076|^X\t14698" TRiCoLOR/GM04284_SENSoR_Illumina_Guided/TRiCoLOR.srt.bed > TRiCoLOR/GM04284_SENSoR_Illumina_Guided/TRiCoLOR.srt.fltrd.bed
+# 3074007
+TRiCoLOR REFER -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta -bam  GM04284_HTT_Illumina_Guided_HP_1.bam GM04284_HTT_Illumina_Guided_HP_2.bam \
+-bed TRiCoLOR/GM04284_SENSoR_Illumina_Guided/TRiCoLOR.srt.fltrd.bed -s 20 \
+-o TRiCoLOR/GM04284_REFER_Illumina_Guided
+
+# Longshot HP
+#cd work/sdularsen/tine/nanoporeData/haplotyped_longshot
+#grep -P "^4\t3075|^4\t3076|^X\t14698" TRiCoLOR/GM04284_SENSoR_Longshot/TRiCoLOR.srt.bed > TRiCoLOR/GM04284_SENSoR_Longshot/TRiCoLOR.srt.fltrd.bed
+grep -P "^chr4\t3076603|^chrX\t146993569" TRiCoLOR/GM04284_SENSoR_Longshot/TRiCoLOR.srt.bed > TRiCoLOR/GM04284_SENSoR_Longshot/TRiCoLOR.srt.fltrd.bed
+TRiCoLOR REFER -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta -bam  GM04284_HTT_Longshot_HP_1.bam GM04284_HTT_Longshot_HP_2.bam \
+-bed TRiCoLOR/GM04284_SENSoR_Longshot/TRiCoLOR.srt.fltrd.bed -s 20 \
+-o TRiCoLOR/GM04284_REFER_Longshot
+
+
+
+## GM05538 HTT
+# Pre repeat counting to shorten time of processing
+# Illumina-Guided HP
+#cd work/sdularsen/tine/nanoporeData/haplotyped_illumina
+#grep -P "^4\t3075|^4\t3076|^X\t14698" TRiCoLOR/GM05538_SENSoR_Illumina_Guided/TRiCoLOR.srt.bed > TRiCoLOR/GM05538_SENSoR_Illumina_Guided/TRiCoLOR.srt.fltrd.bed
+TRiCoLOR REFER -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta -bam  GM05538_HTT_Illumina_Guided_HP_1.bam GM05538_HTT_Illumina_Guided_HP_2.bam \
+-bed TRiCoLOR/GM05538_SENSoR_Illumina_Guided/TRiCoLOR.srt.fltrd.bed -s 20 \
+-o TRiCoLOR/GM05538_REFER_Illumina_Guided
+
+# Longshot HP
+#3075095
+#cd work/sdularsen/tine/nanoporeData/haplotyped_longshot
+#grep -P "^4\t3075|^4\t3076|^X\t14698" TRiCoLOR/GM05538_SENSoR_Longshot/TRiCoLOR.srt.bed > TRiCoLOR/GM05538_SENSoR_Longshot/TRiCoLOR.srt.fltrd.bed
+TRiCoLOR REFER -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta -bam  GM05538_HTT_Longshot_HP_1.bam GM05538_HTT_Longshot_HP_2.bam \
+-bed TRiCoLOR/GM05538_SENSoR_Longshot/TRiCoLOR.srt.fltrd.bed -s 20 \
+-o TRiCoLOR/GM05538_REFER_Longshot
+
+
+
+
+## GM06891 HTT
+# Illumina-Guided HP
+#cd work/sdularsen/tine/nanoporeData/haplotyped_illumina
+#grep -P "^4\t3075|^4\t3076|^X\t14698" TRiCoLOR/GM06891_SENSoR_Illumina_Guided/TRiCoLOR.srt.bed > TRiCoLOR/GM06891_SENSoR_Illumina_Guided/TRiCoLOR.srt.fltrd.bed
+TRiCoLOR REFER -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta -bam  GM06891_HTT_Illumina_Guided_HP_1.bam GM06891_HTT_Illumina_Guided_HP_2.bam \
+-bed TRiCoLOR/GM06891_SENSoR_Illumina_Guided/TRiCoLOR.srt.fltrd.bed -s 20 \
+-o TRiCoLOR/GM06891_REFER_Illumina_Guided
+
+# Longshot HP
+#cd work/sdularsen/tine/nanoporeData/haplotyped_longshot
+#grep -P "^4\t3075|^4\t3076|^X\t14698" TRiCoLOR/GM06891_SENSoR_Longshot/TRiCoLOR.srt.bed > TRiCoLOR/GM06891_SENSoR_Longshot/TRiCoLOR.srt.fltrd.bed
+# 3075096-3081354 & 146989755
+TRiCoLOR REFER -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta -bam  GM06891_HTT_Longshot_HP_1.bam GM06891_HTT_Longshot_HP_2.bam \
+-bed TRiCoLOR/GM06891_SENSoR_Longshot/TRiCoLOR.srt.fltrd.bed -s 20 \
+-o TRiCoLOR/GM06891_REFER_Longshot
+
+
+
+## GM07541 HTT
+# Illumina-Guided HP
+#cd work/sdularsen/tine/nanoporeData/haplotyped_illumina
+#grep -P "^4\t3075|^4\t3076|^X\t14698" TRiCoLOR/GM07541_SENSoR_Illumina_Guided/TRiCoLOR.srt.bed > TRiCoLOR/GM07541_SENSoR_Illumina_Guided/TRiCoLOR.srt.fltrd.bed
+TRiCoLOR REFER -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta -bam  GM07541_HTT_Illumina_Guided_HP_1.bam GM07541_HTT_Illumina_Guided_HP_2.bam \
+-bed TRiCoLOR/GM07541_SENSoR_Illumina_Guided/TRiCoLOR.srt.fltrd.bed -s 20 \
+-o TRiCoLOR/GM07541_REFER_Illumina_Guided
+
+# Longshot HP
+#cd work/sdularsen/tine/nanoporeData/haplotyped_longshot
+#grep -P "^^4\t3075|^4\t3076|^X\t14698" TRiCoLOR/GM07541_SENSoR_Longshot/TRiCoLOR.srt.bed > TRiCoLOR/GM07541_SENSoR_Longshot/TRiCoLOR.srt.fltrd.bed
+# 3075096-3077738 & 146989755
+TRiCoLOR REFER -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta -bam  GM07541_HTT_Longshot_HP_1.bam GM07541_HTT_Longshot_HP_2.bam \
+-bed TRiCoLOR/GM07541_SENSoR_Longshot/TRiCoLOR.srt.fltrd.bed -s 20 \
+-o TRiCoLOR/GM07541_REFER_Longshot2
+
+
+
+## GM07861 HTT
+# Illumina-Guided HP
+#cd work/sdularsen/tine/nanoporeData/haplotyped_illumina
+#grep -P "^^4\t3075|^4\t3076|^X\t14698" TRiCoLOR/GM07861_SENSoR_Illumina_Guided/TRiCoLOR.srt.bed > TRiCoLOR/GM07861_SENSoR_Illumina_Guided/TRiCoLOR.srt.fltrd.bed
+TRiCoLOR REFER -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta -bam  GM07861_HTT_Illumina_Guided_HP_1.bam GM07861_HTT_Illumina_Guided_HP_2.bam \
+-bed TRiCoLOR/GM07861_SENSoR_Illumina_Guided/TRiCoLOR.srt.fltrd.bed -s 20 \
+-o TRiCoLOR/GM07861_REFER_Illumina_Guided
+
+# Longshot HP
+#cd work/sdularsen/tine/nanoporeData/haplotyped_longshot
+#grep -P "^4\t3075|^4\t3076|^X\t14698" TRiCoLOR/GM07861_SENSoR_Longshot/TRiCoLOR.srt.bed > TRiCoLOR/GM07861_SENSoR_Longshot/TRiCoLOR.srt.fltrd.bed
+TRiCoLOR REFER -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta -bam  GM07861_HTT_Longshot_HP_1.bam GM07861_HTT_Longshot_HP_2.bam \
+-bed TRiCoLOR/GM07861_SENSoR_Longshot/TRiCoLOR.srt.fltrd.bed -s 20 \
+-o TRiCoLOR/GM07861_REFER_Longshot
+
+
+
+## GM20239 HTT
+# Illumina-Guided HP
+#cd work/sdularsen/tine/nanoporeData/haplotyped_illumina
+#grep -P "^4\t3075|^4\t3076|^X\t14698" TRiCoLOR/GM20239_SENSoR_Illumina_Guided/TRiCoLOR.srt.bed > TRiCoLOR/GM20239_SENSoR_Illumina_Guided/TRiCoLOR.srt.fltrd.bed
+TRiCoLOR REFER -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta -bam  GM20239_HTT_Illumina_Guided_HP_1.bam GM20239_HTT_Illumina_Guided_HP_2.bam \
+-bed TRiCoLOR/GM20239_SENSoR_Illumina_Guided/TRiCoLOR.srt.fltrd.bed -s 20 \
+-o TRiCoLOR/GM20239_REFER_Illumina_Guided
+
+# Longshot HP
+#cd work/sdularsen/tine/nanoporeData/haplotyped_longshot
+#grep -P "^4\t3075|^4\t3076|^X\t14698" TRiCoLOR/GM20239_SENSoR_Longshot/TRiCoLOR.srt.bed > TRiCoLOR/GM20239_SENSoR_Longshot/TRiCoLOR.srt.fltrd.bed
+TRiCoLOR REFER -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta -bam  GM20239_HTT_Longshot_HP_1.bam GM20239_HTT_Longshot_HP_2.bam \
+-bed TRiCoLOR/GM20239_SENSoR_Longshot/TRiCoLOR.srt.fltrd.bed -s 20 \
+-o TRiCoLOR/GM20239_REFER_Longshot
+
+
+
+
+
+
+### ApP #########################################################################################################################
+# echo -e "4\t3075000\t3077000\tregion" > plot_chr4.bed
+# echo -e "X\t146993000\t146994000\tregion" > plot_chrX.bed
+
+
+
+TRiCoLOR ApP -g GRCh38_full_analysis_set_plus_decoy_hla.fa \
+-bam refer_son/haplotype1/chr20.merged.srt.bam refer_son/haplotype2/chr20.merged.srt.bam \
+-bed plot.bed \
+-o app_son \
+-gb refer_son/reference/chr20.repetitions.bed \
+-hb refer_son/haplotype1/chr20.repetitions.bed refer_son/haplotype2/chr20.repetitions.bed
+
+
+### GM04284
+# Illumina-Guided HP
+TRiCoLOR ApP -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+-bam TRiCoLOR/GM04284_REFER_Illumina_Guided/haplotype1/4.merged.srt.bam \
+-bed plot.bed \
+-o TRiCoLOR/GM04284_ApP_Illumina_Guided \
+-gb TRiCoLOR/GM04284_REFER_Illumina_Guided/reference/4.repetitions.bed \
+-hb TRiCoLOR/GM04284_REFER_Illumina_Guided/haplotype1/4.repetitions.bed TRiCoLOR/GM04284_REFER_Illumina_Guided/haplotype2/4.repetitions.bed
+
+# Longshot HP !Not possible!
+#samtools index TRiCoLOR/GM04284_REFER_Longshot/haplotype1/4.merged.srt.bam
+#samtools index TRiCoLOR/GM04284_REFER_Longshot/haplotype2/4.merged.srt.bam
+TRiCoLOR ApP -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+-bam TRiCoLOR/GM04284_REFER_Longshot/haplotype1/4.merged.srt.bam TRiCoLOR/GM04284_REFER_Longshot/haplotype2/4.merged.srt.bam \
+-bed plot_chr4.bed \
+-o TRiCoLOR/GM04284_ApP_Longshot_chr4 \
+-gb TRiCoLOR/GM04284_REFER_Longshot/reference/4.repetitions.bed \
+-hb TRiCoLOR/GM04284_REFER_Longshot/haplotype1/4.repetitions.bed TRiCoLOR/GM04284_REFER_Longshot/haplotype2/4.repetitions.bed
+
+
+
+### GM05538
+# Illumina-Guided HP
+TRiCoLOR ApP -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+-bam TRiCoLOR/GM05538_REFER_Illumina_Guided/haplotype1/4.merged.srt.bam \
+-bed plot.bed \
+-o TRiCoLOR/GM05538_ApP_Illumina_Guided \
+-gb TRiCoLOR/GM05538_REFER_Illumina_Guided/reference/4.repetitions.bed \
+-hb TRiCoLOR/GM05538_REFER_Illumina_Guided/haplotype1/4.repetitions.bed TRiCoLOR/GM05538_REFER_Illumina_Guided/haplotype2/4.repetitions.bed
+
+# Longshot HP !Only haplotype 2 has detected repeats
+#samtools index TRiCoLOR/GM05538_REFER_Longshot/haplotype1/4.merged.srt.bam
+#samtools index TRiCoLOR/GM05538_REFER_Longshot/haplotype2/4.merged.srt.bam
+TRiCoLOR ApP -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+-bam TRiCoLOR/GM05538_REFER_Longshot/haplotype2/4.merged.srt.bam TRiCoLOR/GM05538_REFER_Longshot/haplotype2/4.merged.srt.bam \
+-bed plot_chr4.bed \
+-o TRiCoLOR/GM05538_ApP_Longshot_chr4_3 \
+-gb TRiCoLOR/GM05538_REFER_Longshot/reference/4.repetitions.bed \
+-hb TRiCoLOR/GM05538_REFER_Longshot/haplotype1/4.repetitions.bed TRiCoLOR/GM05538_REFER_Longshot/haplotype2/4.repetitions.bed
+
+
+
+
+### GM06891
+# Illumina-Guided HP
+TRiCoLOR ApP -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+-bam TRiCoLOR/GM06891_REFER_Illumina_Guided/haplotype1/4.merged.srt.bam \
+-bed plot.bed \
+-o TRiCoLOR/GM06891_ApP_Illumina_Guided \
+-gb TRiCoLOR/GM06891_REFER_Illumina_Guided/reference/4.repetitions.bed \
+-hb TRiCoLOR/GM06891_REFER_Illumina_Guided/haplotype1/4.repetitions.bed TRiCoLOR/GM06891_REFER_Illumina_Guided/haplotype2/4.repetitions.bed
+
+# Longshot HP
+#samtools index TRiCoLOR/GM06891_REFER_Longshot/haplotype1/4.merged.srt.bam
+#samtools index TRiCoLOR/GM06891_REFER_Longshot/haplotype2/4.merged.srt.bam
+TRiCoLOR ApP -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+-bam TRiCoLOR/GM06891_REFER_Longshot/haplotype1/4.merged.srt.bam TRiCoLOR/GM06891_REFER_Longshot/haplotype2/4.merged.srt.bam \
+-bed plot_chr4.bed \
+-o TRiCoLOR/GM06891_ApP_Longshot_chr4 \
+-gb TRiCoLOR/GM06891_REFER_Longshot/reference/4.repetitions.bed \
+-hb TRiCoLOR/GM06891_REFER_Longshot/haplotype1/4.repetitions.bed TRiCoLOR/GM06891_REFER_Longshot/haplotype2/4.repetitions.bed
+
+#samtools index TRiCoLOR/GM06891_REFER_Longshot/haplotype1/X.merged.srt.bam
+#samtools index TRiCoLOR/GM06891_REFER_Longshot/haplotype2/X.merged.srt.bam
+TRiCoLOR ApP -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+-bam TRiCoLOR/GM06891_REFER_Longshot/haplotype1/X.merged.srt.bam TRiCoLOR/GM06891_REFER_Longshot/haplotype2/X.merged.srt.bam \
+-bed plot_chrX.bed \
+-o TRiCoLOR/GM06891_ApP_Longshot_chrX_2 \
+-gb TRiCoLOR/GM06891_REFER_Longshot/reference/X.repetitions.bed \
+-hb TRiCoLOR/GM06891_REFER_Longshot/haplotype1/X.repetitions.bed TRiCoLOR/GM06891_REFER_Longshot/haplotype2/X.repetitions.bed
+
+
+
+### GM07541
+# Illumina-Guided HP
+TRiCoLOR ApP -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+-bam TRiCoLOR/GM05538_REFER_Illumina_Guided/haplotype1/4.merged.srt.bam \
+-bed plot.bed \
+-o TRiCoLOR/GM05538_ApP_Illumina_Guided \
+-gb TRiCoLOR/GM05538_REFER_Illumina_Guided/reference/4.repetitions.bed \
+-hb TRiCoLOR/GM05538_REFER_Illumina_Guided/haplotype1/4.repetitions.bed TRiCoLOR/GM05538_REFER_Illumina_Guided/haplotype2/4.repetitions.bed
+
+# Longshot HP
+#samtools index TRiCoLOR/GM07541_REFER_Longshot/haplotype1/4.merged.srt.bam
+#samtools index TRiCoLOR/GM07541_REFER_Longshot/haplotype2/4.merged.srt.bam
+TRiCoLOR ApP -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+-bam TRiCoLOR/GM07541_REFER_Longshot/haplotype1/4.merged.srt.bam TRiCoLOR/GM07541_REFER_Longshot/haplotype2/4.merged.srt.bam \
+-bed plot_chr4.bed \
+-o TRiCoLOR/GM07541_ApP_Longshot_chr4 \
+-gb TRiCoLOR/GM07541_REFER_Longshot/reference/4.repetitions.bed \
+-hb TRiCoLOR/GM07541_REFER_Longshot/haplotype1/4.repetitions.bed TRiCoLOR/GM07541_REFER_Longshot/haplotype2/4.repetitions.bed
+
+
+### GM07861
+# Illumina-Guided HP
+TRiCoLOR ApP -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+-bam TRiCoLOR/GM05538_REFER_Illumina_Guided/haplotype1/4.merged.srt.bam \
+-bed plot.bed \
+-o TRiCoLOR/GM05538_ApP_Illumina_Guided \
+-gb TRiCoLOR/GM05538_REFER_Illumina_Guided/reference/4.repetitions.bed \
+-hb TRiCoLOR/GM05538_REFER_Illumina_Guided/haplotype1/4.repetitions.bed TRiCoLOR/GM05538_REFER_Illumina_Guided/haplotype2/4.repetitions.bed
+
+# Longshot HP 
+#samtools index TRiCoLOR/GM07861_REFER_Longshot/haplotype1/4.merged.srt.bam
+#samtools index TRiCoLOR/GM07861_REFER_Longshot/haplotype2/4.merged.srt.bam
+TRiCoLOR ApP -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+-bam TRiCoLOR/GM07861_REFER_Longshot/haplotype1/4.merged.srt.bam TRiCoLOR/GM07861_REFER_Longshot/haplotype2/4.merged.srt.bam \
+-bed plot_chr4.bed \
+-o TRiCoLOR/GM07861_ApP_Longshot_chr4 \
+-gb TRiCoLOR/GM07861_REFER_Longshot/reference/4.repetitions.bed \
+-hb TRiCoLOR/GM07861_REFER_Longshot/haplotype1/4.repetitions.bed TRiCoLOR/GM07861_REFER_Longshot/haplotype2/4.repetitions.bed
+
+
+
+
+### GM20239
+# Illumina-Guided HP
+TRiCoLOR ApP -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+-bam TRiCoLOR/GM06891_REFER_Illumina_Guided/haplotype1/4.merged.srt.bam \
+-bed plot.bed \
+-o TRiCoLOR/GM06891_ApP_Illumina_Guided \
+-gb TRiCoLOR/GM06891_REFER_Illumina_Guided/reference/4.repetitions.bed \
+-hb TRiCoLOR/GM06891_REFER_Illumina_Guided/haplotype1/4.repetitions.bed TRiCoLOR/GM06891_REFER_Illumina_Guided/haplotype2/4.repetitions.bed
+
+# Longshot HP
+#samtools index TRiCoLOR/GM20239_REFER_Longshot/haplotype1/4.merged.srt.bam
+#samtools index TRiCoLOR/GM20239_REFER_Longshot/haplotype2/4.merged.srt.bam
+TRiCoLOR ApP -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+-bam TRiCoLOR/GM20239_REFER_Longshot/haplotype1/4.merged.srt.bam TRiCoLOR/GM20239_REFER_Longshot/haplotype2/4.merged.srt.bam \
+-bed plot_chr4.bed \
+-o TRiCoLOR/GM20239_ApP_Longshot_chr4 \
+-gb TRiCoLOR/GM20239_REFER_Longshot/reference/4.repetitions.bed \
+-hb TRiCoLOR/GM20239_REFER_Longshot/haplotype1/4.repetitions.bed TRiCoLOR/GM20239_REFER_Longshot/haplotype2/4.repetitions.bed
+
+#samtools index TRiCoLOR/GM06891_REFER_Longshot/haplotype1/X.merged.srt.bam
+#samtools index TRiCoLOR/GM06891_REFER_Longshot/haplotype2/X.merged.srt.bam
+TRiCoLOR ApP -g /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+-bam TRiCoLOR/GM06891_REFER_Longshot/haplotype1/X.merged.srt.bam TRiCoLOR/GM06891_REFER_Longshot/haplotype2/X.merged.srt.bam \
+-bed plot_chrX.bed \
+-o TRiCoLOR/GM06891_ApP_Longshot_chrX_2 \
+-gb TRiCoLOR/GM06891_REFER_Longshot/reference/X.repetitions.bed \
+-hb TRiCoLOR/GM06891_REFER_Longshot/haplotype1/X.repetitions.bed TRiCoLOR/GM06891_REFER_Longshot/haplotype2/X.repetitions.bed
+
+
+
+
+
