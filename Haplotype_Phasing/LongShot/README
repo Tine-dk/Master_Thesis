@@ -1,1 +1,9 @@
+This is a description of what the files are used for
+######################################################
+
+### longshot_HP.txt
+This script shows how the samples are run with LongShot.
+
+### longshot_readnames.txt
+This script shows how to get read-names with their haplotype tag out in txt files.
 
