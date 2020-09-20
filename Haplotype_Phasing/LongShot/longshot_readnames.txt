@@ -1,0 +1,96 @@
+## Get longshot readnames from reads covering the repeat-extension 
+
+conda activate minimap2
+
+# GM04284 HTT
+samtools index nanoporeData/longshot_ny/GM04284_longshot_hp_chr4.bam
+samtools view -bh nanoporeData/longshot_ny/GM04284_longshot_hp_chr4.bam "4:3076603-3076660" > nanoporeData/longshot_ny/bam_subset/GM04284_longshot_hp_chr4_subset.bam
+samtools index nanoporeData/longshot_ny/bam_subset/GM04284_longshot_hp_chr4_subset.bam
+samtools view nanoporeData/longshot_ny/bam_subset/GM04284_longshot_hp_chr4_subset.bam | cut -f 1,22 > nanoporeData/longshot_ny/read_names/GM04284_longshot_hp_chr4_readnames.txt
+
+# GM04284 FMR1
+samtools index nanoporeData/longshot_ny/GM04284_longshot_hp_chrX.bam
+samtools view -bh nanoporeData/longshot_ny/GM04284_longshot_hp_chrX.bam "X:146993569-146993598" > nanoporeData/longshot_ny/bam_subset/GM04284_longshot_hp_chrX_subset.bam
+samtools index nanoporeData/longshot_ny/bam_subset/GM04284_longshot_hp_chrX_subset.bam
+samtools view nanoporeData/longshot_ny/bam_subset/GM04284_longshot_hp_chrX_subset.bam | cut -f 1,22 > nanoporeData/longshot_ny/read_names/GM04284_longshot_hp_chrX_readnames.txt
+
+# GM05538 HTT
+samtools index nanoporeData/longshot_ny/GM05538_longshot_hp_chr4.bam
+samtools view -bh nanoporeData/longshot_ny/GM05538_longshot_hp_chr4.bam "4:3076603-3076660" > nanoporeData/longshot_ny/bam_subset/GM05538_longshot_hp_chr4_subset.bam
+samtools index nanoporeData/longshot_ny/bam_subset/GM05538_longshot_hp_chr4_subset.bam
+samtools view nanoporeData/longshot_ny/bam_subset/GM05538_longshot_hp_chr4_subset.bam | cut -f 1,22 > nanoporeData/longshot_ny/read_names/GM05538_longshot_hp_chr4_readnames.txt
+
+# GM05538 FMR1
+samtools index nanoporeData/longshot_ny/GM05538_longshot_hp_chrX.bam
+samtools view -bh nanoporeData/longshot_ny/GM05538_longshot_hp_chrX.bam "X:146993569-146993598" > nanoporeData/longshot_ny/bam_subset/GM05538_longshot_hp_chrX_subset.bam
+samtools index nanoporeData/longshot_ny/bam_subset/GM05538_longshot_hp_chrX_subset.bam
+samtools view nanoporeData/longshot_ny/bam_subset/GM05538_longshot_hp_chrX_subset.bam | cut -f 1,22 > nanoporeData/longshot_ny/read_names/GM05538_longshot_hp_chrX_readnames.txt
+
+# GM06891 HTT
+samtools index nanoporeData/longshot_ny/GM06891_longshot_hp_chr4.bam
+samtools view -bh nanoporeData/longshot_ny/GM06891_longshot_hp_chr4.bam "4:3076603-3076660" > nanoporeData/longshot_ny/bam_subset/GM06891_longshot_hp_chr4_subset.bam
+samtools index nanoporeData/longshot_ny/bam_subset/GM06891_longshot_hp_chr4_subset.bam
+samtools view nanoporeData/longshot_ny/bam_subset/GM06891_longshot_hp_chr4_subset.bam | cut -f 1,22 > nanoporeData/longshot_ny/read_names/GM06891_longshot_hp_chr4_readnames.txt
+
+# GM06891 FMR1
+samtools index nanoporeData/longshot_ny/GM06891_longshot_hp_chrX.bam
+samtools view -bh nanoporeData/longshot_ny/GM06891_longshot_hp_chrX.bam "X:146993569-146993598" > nanoporeData/longshot_ny/bam_subset/GM06891_longshot_hp_chrX_subset.bam
+samtools index nanoporeData/longshot_ny/bam_subset/GM06891_longshot_hp_chrX_subset.bam
+samtools view nanoporeData/longshot_ny/bam_subset/GM06891_longshot_hp_chrX_subset.bam | cut -f 1,22 > nanoporeData/longshot_ny/read_names/GM06891_longshot_hp_chrX_readnames.txt
+
+# GM07541 HTT
+samtools index nanoporeData/longshot_ny/GM07541_longshot_hp_chr4.bam
+samtools view -bh nanoporeData/longshot_ny/GM07541_longshot_hp_chr4.bam "4:3076603-3076660" > nanoporeData/longshot_ny/bam_subset/GM07541_longshot_hp_chr4_subset.bam
+samtools index nanoporeData/longshot_ny/bam_subset/GM07541_longshot_hp_chr4_subset.bam
+samtools view nanoporeData/longshot_ny/bam_subset/GM07541_longshot_hp_chr4_subset.bam | cut -f 1,22 > nanoporeData/longshot_ny/read_names/GM07541_longshot_hp_chr4_readnames.txt
+
+# GM07541 FMR1
+samtools index nanoporeData/longshot_ny/GM07541_longshot_hp_chrX.bam
+samtools view -bh nanoporeData/longshot_ny/GM07541_longshot_hp_chrX.bam "X:146993569-146993598" > nanoporeData/longshot_ny/bam_subset/GM07541_longshot_hp_chrX_subset.bam
+samtools index nanoporeData/longshot_ny/bam_subset/GM07541_longshot_hp_chrX_subset.bam
+samtools view nanoporeData/longshot_ny/bam_subset/GM07541_longshot_hp_chrX_subset.bam | cut -f 1,22 > nanoporeData/longshot_ny/read_names/GM07541_longshot_hp_chrX_readnames.txt
+
+# GM07861 HTT
+samtools index nanoporeData/longshot_ny/GM07861_longshot_hp_chr4.bam
+samtools view -bh nanoporeData/longshot_ny/GM07861_longshot_hp_chr4.bam "4:3076603-3076660" > nanoporeData/longshot_ny/bam_subset/GM07861_longshot_hp_chr4_subset.bam
+samtools index nanoporeData/longshot_ny/bam_subset/GM07861_longshot_hp_chr4_subset.bam
+samtools view nanoporeData/longshot_ny/bam_subset/GM07861_longshot_hp_chr4_subset.bam | cut -f 1,22 > nanoporeData/longshot_ny/read_names/GM07861_longshot_hp_chr4_readnames.txt
+
+# GM07861 FMR1
+samtools index nanoporeData/longshot_ny/GM07861_longshot_hp_chrX.bam
+samtools view -bh nanoporeData/longshot_ny/GM07861_longshot_hp_chrX.bam "X:146993569-146993598" > nanoporeData/longshot_ny/bam_subset/GM07861_longshot_hp_chrX_subset.bam
+samtools index nanoporeData/longshot_ny/bam_subset/GM07861_longshot_hp_chrX_subset.bam
+samtools view nanoporeData/longshot_ny/bam_subset/GM07861_longshot_hp_chrX_subset.bam | cut -f 1,22 > nanoporeData/longshot_ny/read_names/GM07861_longshot_hp_chrX_readnames.txt
+
+# GM20239 HTT
+samtools index nanoporeData/longshot_ny/GM20239_longshot_hp_chr4.bam
+samtools view -bh nanoporeData/longshot_ny/GM20239_longshot_hp_chr4.bam "4:3076603-3076660" > nanoporeData/longshot_ny/bam_subset/GM20239_longshot_hp_chr4_subset.bam
+samtools index nanoporeData/longshot_ny/bam_subset/GM20239_longshot_hp_chr4_subset.bam
+samtools view nanoporeData/longshot_ny/bam_subset/GM20239_longshot_hp_chr4_subset.bam | cut -f 1,22 > nanoporeData/longshot_ny/read_names/GM20239_longshot_hp_chr4_readnames.txt
+
+# GM20239 FMR1
+samtools index nanoporeData/longshot_ny/GM20239_longshot_hp_chrX.bam
+samtools view -bh nanoporeData/longshot_ny/GM20239_longshot_hp_chrX.bam "X:146993569-146993598" > nanoporeData/longshot_ny/bam_subset/GM20239_longshot_hp_chrX_subset.bam
+samtools index nanoporeData/longshot_ny/bam_subset/GM20239_longshot_hp_chrX_subset.bam
+samtools view nanoporeData/longshot_ny/bam_subset/GM20239_longshot_hp_chrX_subset.bam | cut -f 1,22 > nanoporeData/longshot_ny/read_names/GM20239_longshot_hp_chrX_readnames.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
