@@ -1,0 +1,103 @@
+#### LONGSHOT #############################
+# To separate alleles
+############################################
+
+## Installing dependencies and creating an environment
+conda create --name longshot
+
+conda install -c conda-forge rust
+conda install -c anaconda zlib
+conda install -c anaconda xz
+conda install -c anaconda clang
+conda install -c conda-forge gcc_linux-64
+conda install -c anaconda libcxx
+conda install -c anaconda make
+conda install -c pkgw-forge cargo
+
+# Pulling longshot and installing
+conda install -c bioconda longshot
+
+##############################################
+## Start interactive node
+srun -A sdularsen_slim --time 24:00:00 --pty bash -i
+## Activate Environment
+conda activate longshot
+
+## Usage
+$ longshot [FLAGS] [OPTIONS] --bam <BAM> --ref <FASTA> --out <VCF>
+
+# GM04284
+longshot -r 4 --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot_ny/GM04284_longshot_hp_chr4.bam \
+--min_cov 4 --min_alt_count 2 --out /work/sdularsen/tine/nanoporeData/longshot_ny/GM04284_longshot_hp_chr4.vcf
+
+longshot -r X --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM04284.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot_ny/GM04284_longshot_hp_chrX.bam \
+--min_cov 4 --min_alt_count 2 --out /work/sdularsen/tine/nanoporeData/longshot_ny/GM04284_longshot_hp_chrX.vcf
+
+
+# GM05538
+longshot -r 4 --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot_ny/GM05538_longshot_hp_chr4.bam \
+--min_cov 4 --min_alt_count 2 --out /work/sdularsen/tine/nanoporeData/longshot_ny/GM05538_longshot_hp_chr4.vcf
+
+longshot -r X --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM05538.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot_ny/GM05538_longshot_hp_chrX.bam \
+--min_cov 4 --min_alt_count 2 --out /work/sdularsen/tine/nanoporeData/longshot_ny/GM05538_longshot_hp_chrX.vcf
+
+
+# GM06891
+longshot -r 4 --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot_ny/GM06891_longshot_hp_chr4.bam \
+--min_cov 4 --min_alt_count 2 --out /work/sdularsen/tine/nanoporeData/longshot_ny/GM06891_longshot_hp_chr4.vcf
+
+longshot -r X --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM06891.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot_ny/GM06891_longshot_hp_chrX.bam \
+--min_cov 4 --min_alt_count 2 --out /work/sdularsen/tine/nanoporeData/longshot_ny/GM06891_longshot_hp_chrX.vcf
+
+
+# GM07541
+longshot -r 4 --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot_ny/GM07541_longshot_hp_chr4.bam \
+--min_cov 4 --min_alt_count 2 --out /work/sdularsen/tine/nanoporeData/longshot_ny/GM07541_longshot_hp_chr4.vcf
+
+longshot -r X --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07541.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot_ny/GM07541_longshot_hp_chrX.bam \
+--min_cov 4 --min_alt_count 2 --out /work/sdularsen/tine/nanoporeData/longshot_ny/GM07541_longshot_hp_chrX.vcf
+
+
+# GM07861
+longshot -r 4 --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot_ny/GM07861_longshot_hp_chr4.bam \
+--min_cov 4 --min_alt_count 2 --out /work/sdularsen/tine/nanoporeData/longshot_ny/GM07861_longshot_hp_chr4.vcf
+
+longshot -r X --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM07861.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot_ny/GM07861_longshot_hp_chrX.bam \
+--min_cov 4 --min_alt_count 2 --out /work/sdularsen/tine/nanoporeData/longshot_ny/GM07861_longshot_hp_chrX.vcf
+
+
+# GM20239
+longshot -r 4 --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot_ny/GM20239_longshot_hp_chr4.bam \
+--min_cov 4 --min_alt_count 2 --out /work/sdularsen/tine/nanoporeData/longshot_ny/GM20239_longshot_hp_chr4.vcf
+
+longshot -r X --bam /work/sdularsen/tine/nanoporeData/alignedMinimap2/G87-GM20239.bam --ref /work/sdularsen/tine/resources/b37/human_g1k_v37_decoy.fasta \
+--out_bam /work/sdularsen/tine/nanoporeData/longshot_ny/GM20239_longshot_hp_chrX.bam \
+--min_cov 4 --min_alt_count 2 --out /work/sdularsen/tine/nanoporeData/longshot_ny/GM20239_longshot_hp_chrX.vcf
+
+
+
+
+# To be able to look at the BAM in IGV index the file:
+conda activate minimap2
+samtools index /work/sdularsen/tine/nanoporeData/longshot_ny/GM04284_longshot_hp_chr4.bam 
+samtools index /work/sdularsen/tine/nanoporeData/longshot_ny/GM04284_longshot_hp_chrX.bam
+
+
+
+
+
+
+
+
+
