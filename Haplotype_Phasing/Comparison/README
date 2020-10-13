@@ -7,5 +7,8 @@ This is done to compare results further down the analysis pipeline, as haplotype
   (i.e. reads tagged with HP1 by Illumina-guided HP could have a lot of reads in common with reads tagged with HP2 by LongShot).
 When the diagrams are made one can analyse the HP tags across haplotype phasing methods.
 
-### Illumina_Guided_HP.R
-This script creates Logos Plots 
+### Illumina_Guided_Logos_Plots.R
+This script creates Logos Plots for the Illumina-Guided method.
+
+### LongShot_Logos_Plots.R
+This script creates Logos Plots for LongShot derived data.
