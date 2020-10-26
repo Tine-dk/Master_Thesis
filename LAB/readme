@@ -8,3 +8,5 @@ This is a list with the genomic locations of a target panel containing multiple 
 ### 4fe98fbd-19f1-4418-8907-7020f3403b60.pdf
 This is the MinION report of GM06891 which was run with ReadFish activated and the fast version of Guppy.
 
+### Targets_small.txt and Targets_large.txt
+are the files with the positions that ReadFish will enrich for.
