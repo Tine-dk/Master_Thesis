@@ -8,3 +8,6 @@ This is the MinION report of GM06891 which was run with ReadFish activated and t
 ### Targets_small.txt and Targets_large.txt
 are the files with the positions that ReadFish will enrich for.
 These are lists with the genomic locations of a target panel containing multiple short tandem repeat areas with a small and a large window around these targets.
+
+### Target_depth.R
+This script calculates the average genome depth as well as processing the target depth resulting in plots.
