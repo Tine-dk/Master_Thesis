@@ -10,7 +10,7 @@ library(stringr)
 
 #### Whole Genome data #########################################################################################################
 ## Set Working Directory ########################################################################################################
-setwd("C:/Users/Taine/OneDrive/Skrivebord/Nanopore/unphased_together/whole_genome")
+setwd("C:~/Nanopore/unphased_together/whole_genome")
 ## Read tables ##############################################################################################################
 input_files = list.files(pattern = "_no_hp.txt")
 
@@ -64,7 +64,7 @@ for (file in input_files){
 
 #### Targeted data #########################################################################################################
 ## Set Working Directory ########################################################################################################
-setwd("C:/Users/Taine/OneDrive/Skrivebord/Nanopore/unphased_together/targeted")
+setwd("C:~/Nanopore/unphased_together/targeted")
 ## Read tables ##############################################################################################################
 input_files = list.files(pattern = "_no_hp.txt")
 
@@ -130,7 +130,7 @@ for (file in input_files){
 
 #### Combined data #########################################################################################################
 ## Set Working Directory ########################################################################################################
-setwd("C:/Users/Taine/OneDrive/Skrivebord/Nanopore/unphased_together/combined")
+setwd("C:~/Nanopore/unphased_together/combined")
 ## Read tables ##############################################################################################################
 input_files = list.files(pattern = "_no_hp.txt")
 
