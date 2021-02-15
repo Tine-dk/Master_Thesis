@@ -1,0 +1,2 @@
+RepeatHMM	STRique	Tandem_Genotypes
+43	22	21
