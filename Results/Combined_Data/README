@@ -1,1 +1,5 @@
 
+Unphased Combined Data (WGS + Targeted)
+
+Raw tables including repeat length estimations from STRique, RepeatHMM, and Tandem-Genotypes.
+R-script for ggplot visualization of the repeat length estimations.
