@@ -11,7 +11,7 @@ library(stringr)
 
 #### Tandem_Genotypes #########################################################################################################
 ## Set Working Directory ########################################################################################################
-setwd("C:/Users/Taine/OneDrive/Skrivebord/Nanopore/phased_combined/tandem_genotypes/")
+setwd("C:~/Nanopore/phased_combined/tandem_genotypes/")
 ## Read tables ##############################################################################################################
 input_files = list.files(pattern = "_combined.txt")
 
@@ -58,7 +58,7 @@ for (file in input_files){
 
 #### RepeatHMM #########################################################################################################
 ## Set Working Directory ########################################################################################################
-setwd("C:/Users/Taine/OneDrive/Skrivebord/Nanopore/phased_combined/RepeatHMM/")
+setwd("C:~/Nanopore/phased_combined/RepeatHMM/")
 ## Read tables ##############################################################################################################
 input_files = list.files(pattern = "_combined.txt")
 
@@ -109,7 +109,7 @@ for (file in input_files){
 
 #### STRique #########################################################################################################
 ## Set Working Directory ########################################################################################################
-setwd("C:/Users/Taine/OneDrive/Skrivebord/Nanopore/phased_combined/STRique/")
+setwd("C:~/Nanopore/phased_combined/STRique/")
 ## Read tables ##############################################################################################################
 input_files = list.files(pattern = "_results.txt")
 
@@ -187,7 +187,7 @@ for (file in input_files){
 
 #### TRiCoLOR #########################################################################################################
 ## Set Working Directory ########################################################################################################
-setwd("C:/Users/Taine/OneDrive/Skrivebord/Nanopore/phased_combined/tricolor/")
+setwd("C:~/Nanopore/phased_combined/tricolor/")
 ## Read tables ##############################################################################################################
 input_files = list.files(pattern = "_combined.txt")
 
@@ -237,7 +237,7 @@ for (file in input_files){
 
 #### Program Means Illumina #########################################################################################################
 ## Set Working Directory ########################################################################################################
-setwd("C:/Users/Taine/OneDrive/Skrivebord/Nanopore/phased_combined/comparison/")
+setwd("C:~/Nanopore/phased_combined/comparison/")
 ## Read tables ##############################################################################################################
 input_files = list.files(pattern = "_combined_illumina.txt")
 
@@ -283,7 +283,7 @@ for (file in input_files){
 
 #### Program Means LongSHot #########################################################################################################
 ## Set Working Directory ########################################################################################################
-setwd("C:/Users/Taine/OneDrive/Skrivebord/Nanopore/phased_combined/comparison/")
+setwd("C:~/Nanopore/phased_combined/comparison/")
 ## Read tables ##############################################################################################################
 input_files = list.files(pattern = "_combined_longshot.txt")
 
