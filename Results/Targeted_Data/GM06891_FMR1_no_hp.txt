@@ -1,0 +1,7 @@
+RepeatHMM	STRique	Tandem_Genotypes
+124	130	120
+135	146	122
+136	137	103
+139	137	120
+141	0	NA
+143	NA	NA
