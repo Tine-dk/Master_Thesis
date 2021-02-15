@@ -1,3 +1,4 @@
 
 Here are the raw txt-files containing tables used for visualization with ggplot in R.
 The R-files and the plots are also to be found in these folders.
+The txt-files have been made manually as all the repeat estimating programs ouput different file types.
