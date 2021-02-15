@@ -1,0 +1,3 @@
+Illumina	LongShot	Haplotype
+30	31	hap1
+15	27	hap2

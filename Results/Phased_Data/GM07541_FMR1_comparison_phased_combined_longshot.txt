@@ -1,0 +1,9 @@
+Count_mean	Haplotype	Program
+53	hap1	RepeatHMM
+45	hap2	RepeatHMM
+36	hap1	STRique
+29	hap2	STRique
+33	hap1	Tandem-Genotypes
+31	hap2	Tandem-Genotypes
+31	hap1	TRiCoLOR
+27	hap2	TRiCoLOR

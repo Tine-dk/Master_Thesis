@@ -1,0 +1,3 @@
+Illumina	LongShot	Haplotype
+19	19	hap1
+20	21	hap2
